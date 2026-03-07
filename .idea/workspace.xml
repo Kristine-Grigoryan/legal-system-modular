@@ -4,53 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/I18nConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/SpringUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CourtSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/LegalCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CaseDocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CourtSessionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/LegalCaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="https://github.com/Kristine-Grigoryan/legal-system-modular">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
