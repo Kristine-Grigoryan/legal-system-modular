@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/I18nConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/SpringUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CourtSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/LegalCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CaseDocumentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CourtSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/LegalCaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SHOW_RECENT_BRANCHES" value="false" />
+  </component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3AXFzkdrLxFfiaZVH3xQF0Z1GxM" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AppApplicationTests.executor": "Run",
+    "Maven.legal-system-modular [clean].executor": "Run",
+    "Maven.legal-system-modular [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AppApplication.executor": "Run",
+    "git-widget-placeholder": "new-branch",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.app.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.service.impl" />
+      <recent name="com.example.service" />
+      <recent name="com.example.app.controller" />
+      <recent name="repository" />
+      <recent name="com.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AppApplication">
+    <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.app" />
+      <option name="MAIN_CLASS_NAME" value="com.example.app.AppApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.AppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="" />
+      <created>1772731275946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772731275946</updated>
+      <workItem from="1772731277270" duration="3106000" />
+      <workItem from="1772734457517" duration="412000" />
+      <workItem from="1772734885390" duration="359000" />
+      <workItem from="1772735317664" duration="216000" />
+      <workItem from="1772735596668" duration="361000" />
+      <workItem from="1772735984457" duration="79000" />
+      <workItem from="1772736096626" duration="264000" />
+      <workItem from="1772736420384" duration="62000" />
+      <workItem from="1772736626824" duration="40000" />
+      <workItem from="1772736715210" duration="168000" />
+      <workItem from="1772737098130" duration="442000" />
+      <workItem from="1772737580952" duration="21000" />
+      <workItem from="1772737673140" duration="79000" />
+      <workItem from="1772737814792" duration="25000" />
+      <workItem from="1772737892605" duration="42000" />
+      <workItem from="1772738015414" duration="48000" />
+      <workItem from="1772738176755" duration="50000" />
+      <workItem from="1772738258396" duration="243000" />
+      <workItem from="1772738546029" duration="12000" />
+      <workItem from="1772738575714" duration="34000" />
+      <workItem from="1772738633230" duration="205000" />
+      <workItem from="1772738964359" duration="103000" />
+      <workItem from="1772739099419" duration="438000" />
+      <workItem from="1772739855706" duration="83000" />
+      <workItem from="1772739973535" duration="89000" />
+      <workItem from="1772740083589" duration="49000" />
+      <workItem from="1772740161626" duration="45000" />
+      <workItem from="1772740231797" duration="675000" />
+      <workItem from="1772741475540" duration="677000" />
+      <workItem from="1772742323059" duration="227000" />
+      <workItem from="1772742574351" duration="3686000" />
+      <workItem from="1772792428939" duration="1513000" />
+      <workItem from="1772799655777" duration="196000" />
+      <workItem from="1772799932387" duration="525000" />
+      <workItem from="1772800506601" duration="209000" />
+      <workItem from="1772803109917" duration="43000" />
+      <workItem from="1772803187738" duration="165000" />
+      <workItem from="1772803808373" duration="315000" />
+      <workItem from="1772804148087" duration="420000" />
+      <workItem from="1772804741364" duration="79000" />
+      <workItem from="1772804838527" duration="20000" />
+      <workItem from="1772804910658" duration="75000" />
+      <workItem from="1772805014819" duration="69000" />
+      <workItem from="1772805142545" duration="436000" />
+      <workItem from="1772805607384" duration="1446000" />
+      <workItem from="1772807158997" duration="804000" />
+      <workItem from="1772808039966" duration="324000" />
+      <workItem from="1772808448985" duration="81000" />
+      <workItem from="1772808584908" duration="196000" />
+      <workItem from="1772808829175" duration="14000" />
+      <workItem from="1772808881493" duration="47000" />
+      <workItem from="1772808948755" duration="96000" />
+      <workItem from="1772809063489" duration="1088000" />
+      <workItem from="1772810205133" duration="123000" />
+      <workItem from="1772810411584" duration="175000" />
+      <workItem from="1772810867707" duration="285000" />
+      <workItem from="1772815151958" duration="24000" />
+      <workItem from="1772815256700" duration="22000" />
+      <workItem from="1772815307534" duration="18000" />
+      <workItem from="1772815360214" duration="431000" />
+      <workItem from="1772815926263" duration="17000" />
+      <workItem from="1772816150140" duration="155000" />
+      <workItem from="1772816323996" duration="3089000" />
+      <workItem from="1772820075232" duration="154000" />
+      <workItem from="1772820254623" duration="1283000" />
+      <workItem from="1772822655938" duration="769000" />
+      <workItem from="1772823619651" duration="74000" />
+      <workItem from="1772823714755" duration="1097000" />
+      <workItem from="1772824846346" duration="8000" />
+      <workItem from="1772824884746" duration="69000" />
+      <workItem from="1772824977153" duration="181000" />
+      <workItem from="1772825196544" duration="382000" />
+      <workItem from="1772825843863" duration="184000" />
+      <workItem from="1772826068049" duration="209000" />
+      <workItem from="1772826334777" duration="42000" />
+      <workItem from="1772826409196" duration="1248000" />
+      <workItem from="1772827708113" duration="271000" />
+      <workItem from="1772828042011" duration="240000" />
+      <workItem from="1772828338555" duration="307000" />
+      <workItem from="1772828692873" duration="486000" />
+      <workItem from="1772829251757" duration="563000" />
+      <workItem from="1772829890402" duration="55000" />
+      <workItem from="1772830065009" duration="76000" />
+      <workItem from="1772830206751" duration="639000" />
+      <workItem from="1772830912761" duration="152000" />
+      <workItem from="1772831133789" duration="51000" />
+      <workItem from="1772831208959" duration="380000" />
+      <workItem from="1772831665199" duration="482000" />
+      <workItem from="1772832231805" duration="89000" />
+      <workItem from="1772832344848" duration="633000" />
+      <workItem from="1772833009839" duration="26000" />
+      <workItem from="1772833170433" duration="2326000" />
+      <workItem from="1772875385844" duration="3101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java</url>
+          <line>22</line>
+          <properties class="com.example.service.impl.CaseDocumentServiceImpl" method="findAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java</url>
+          <line>15</line>
+          <properties class="com.example.service.CaseDocumentService" method="deleteById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java</url>
+          <line>18</line>
+          <properties class="com.example.service.LegalCaseService" method="save">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java</url>
+          <line>23</line>
+          <properties class="com.example.service.impl.UserServiceImpl" method="findByUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java</url>
+          <line>20</line>
+          <properties class="com.example.service.LegalCaseService" method="findByUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
