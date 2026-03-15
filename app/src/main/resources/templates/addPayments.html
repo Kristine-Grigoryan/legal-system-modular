@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Payment</title>
+</head>
+<body>
+
+<th:block th:replace="~{fragments/layout :: layout(~{::title}, ~{::section})}">
+    <title th:text="#{payments.add}">Add Payments</title>
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0"><i class="bi bi-person-plus-fill me-2"></i><span th:text="#{payments.add}">Add Payment</span></h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form action="/payments/add" method="post" enctype="multipart/form-data">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="amount" class="form-label" th:text="#{form.amount}">Amount</label>
+                                    <input type="number" class="form-control" id="amount" name="amount" th:placeholder="#{form.amount}">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="paidDate" class="form-label" th:text="#{form.paidDate}">PaidDate</label>
+                                    <input type="text" class="form-control" id="paidDate" name="paidDate" th:placeholder="#{form.paidDate}">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="method" class="form-label" th:text="#{table.method}">Method</label>
+                                <input type="text" class="form-control" id="method" name="method" th:placeholder="#{table.method}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="case" class="form-label" th:text="#{table.case}">Case</label>
+                                <select class="form-select" id="case" name="case.id">
+                                    <option th:each="case : ${cases}"
+                                            th:value="${case.id}"
+                                            th:text="${case.name}"></option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <button type="submit" class="btn btn-success">
+                                    <i class="bi bi-check-circle me-1"></i><span th:text="#{form.submit}">Submit</span>
+                                </button>
+                                <a href="/Payments" class="btn btn-outline-secondary">
+                                    <i class="bi bi-x-circle me-1"></i><span th:text="#{form.cancel}">Cancel</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+
+</body>
+</html>

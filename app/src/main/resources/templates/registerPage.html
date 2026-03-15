@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+
+<th:block th:replace="~{fragments/layout :: layout(~{::title}, ~{::section})}">
+    <title th:text="#{main.register}">Register</title>
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4 class="mb-0"><i class="bi bi-person-plus-fill me-2"></i><span th:text="#{main.register}">Register</span></h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div th:if="${msg} != null" class="alert alert-danger" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill me-1"></i>
+                            <span th:text="${msg}"></span>
+                        </div>
+                        <form action="/register" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label" th:text="#{form.name}">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" th:placeholder="#{form.name}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="surname" class="form-label" th:text="#{form.surname}">Surname</label>
+                                <input type="text" class="form-control" id="surname" name="surname" th:placeholder="#{form.surname}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="username" class="form-label" th:text="#{form.username}">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" th:placeholder="#{form.username}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label" th:text="#{form.password}">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" th:placeholder="#{form.password}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="role" class="form-label" th:text="#{form.role}">Role</label>
+                                <select class="form-select" id="role" name="role">
+                                    <option value="USER" th:text="#{role.user}">User</option>
+                                    <option value="ADMIN" th:text="#{role.admin}">Admin</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" th:text="#{main.register}">Register</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <span th:text="#{register.hasAccount}">Already have an account?</span>
+                            <a href="/loginPage" th:text="#{main.login}">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+
+</body>
+</html>

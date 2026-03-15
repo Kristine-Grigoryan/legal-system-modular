@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CaseDocuments</title>
+</head>
+<body>
+
+<th:block th:replace="~{fragments/layout :: layout(~{::title}, ~{::section})}">
+    <title th:text="#{header.caseDocuments}">CaseDocuments</title>
+    <section>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2><i class="bi bi-book-fill me-2"></i><span th:text="#{header.caseDocuments}">CaseDocuments</span></h2>
+            <a href="/caseDocuments/add" class="btn btn-success">
+                <i class="bi bi-plus-circle me-1"></i><span th:text="#{caseDocuments.add}">Add CaseDocuments</span>
+            </a>
+        </div>
+
+        <div th:if="${caseDocuments == null || caseDocuments.isEmpty()}" class="alert alert-info text-center">
+            <i class="bi bi-info-circle me-1"></i><span th:text="#{payments.empty}">No caseDocuments found.</span>
+        </div>
+
+        <div th:if="${caseDocuments != null && !caseDocuments.isEmpty()}" class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                <tr>
+                    <th th:text="#{table.id}">Id</th>
+                    <th th:text="#{form.fileName}">FileName</th>
+                    <th th:text="#{form.filePath}">FilePath</th>
+                    <th th:text="#{form.fileType}">FileType</th>
+                    <th th:text="#{table.uploadedAt}">UploadedAt</th>
+                    <th th:text="#{table.action}">Action</th>
+
+
+                </thead>
+                <tbody>
+                <tr th:each="caseDocument : ${CaseDocuments}">
+                    <td>
+                    </td>
+                <tr th:each="c : ${caseDocuments}">
+                    <td th:text="${c.id}"></td>
+                    <td th:text="${c.fileName}"></td>
+                    <td th:text="${c.filePath}"></td>
+                    <td th:text="${c.fileType}"></td>
+                    <td th:text="${c.uploadedAt}"></td>
+                    <td>
+                    </td>
+                    <a th:each="case : ${caseDocument.getCase()}"
+                       th:href="@{/caseDocument(caseId=${case.id})}"
+                       class="badge bg-secondary text-decoration-none" th:text="${case.name}"></a>
+
+                </tr>
+                </tbody>
+                <table>
+                        <a th:href="@{/caseDocuments/delete(id=${c.id})}"
+                           class="btn btn-danger btn-sm"
+                           onclick="return confirm('Are you sure you want to delete this payment?');">
+                            <i class="bi bi-trash me-1"></i><span th:text="#{action.delete}">Delete</span>
+                        </a>
+
+                </table>
+            </table>
+        </div>
+    </section>
+</th:block>
+
+</body>
+</html>

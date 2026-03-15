@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+    <changeSet id="insert-mock-users" author="user">
+        <insert tableName="user">
+            <column name="name" value="Armen"/>
+            <column name="surname" value="Armenyan"/>
+            <column name="phone" value="094112233"/>
+            <column name="password" value="admin123"/>
+            <column name="address" value="Yerevan, Armenia"/>
+            <column name="username" value="armen99"/>
+            <column name="role" value="ADMIN"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-mock-cases" author="user">
+        <insert tableName="legal_case">
+            <column name="title" value="Property Dispute #101"/>
+            <column name="description" value="Case regarding real estate boundaries"/>
+            <column name="amount" valueNumeric="5000.50"/>
+            <column name="status" value="OPEN"/>
+            <column name="user_id" valueNumeric="1"/> </insert>
+    </changeSet>
+
+    <changeSet id="insert-mock-documents" author="user">
+        <insert tableName="case_document">
+            <column name="file_name" value="contract.pdf"/>
+            <column name="file_type" value="application/pdf"/>
+            <column name="file_path" value="G:/uploads/contract.pdf"/>
+            <column name="case_id" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet id="insert-mock-details" author="user">
+        <insert tableName="payment">
+            <column name="amount" valueNumeric="1500.00"/>
+            <column name="paid_date" valueDate="2026-03-10"/>
+            <column name="method" value="BANK_TRANSFER"/>
+            <column name="case_id" valueNumeric="1"/>
+        </insert>
+
+        <insert tableName="court_session">
+            <column name="session_date" valueDate="2026-04-15T10:30:00"/>
+            <column name="courtroom" value="Room 4B"/>
+            <column name="notes" value="First preliminary hearing"/>
+            <column name="case_id" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

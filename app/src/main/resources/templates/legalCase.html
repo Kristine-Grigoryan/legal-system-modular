@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LegalCase</title>
+</head>
+<body>
+
+<th:block th:replace="~{fragments/layout :: layout(~{::title}, ~{::section})}">
+    <title th:text="#{header.legalCases}">LegalCases</title>
+    <section>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2><i class="bi bi-people-fill me-2"></i><span th:text="#{header.legalCases}">LegalCases</span></h2>
+            <div>
+                Filter:
+                <form action="/legalCases" method="get">
+                    <input type="text" name="title" th:value="${searchCriteria != null ? searchCriteria.getTitle() : ''}"
+                           placeholder="title">
+                    <input type="text" name="description"
+                           th:value="${searchCriteria != null ? searchCriteria.getDescription():''}" placeholder="description">
+                    <input type="text" name="amount" th:value="${searchCriteria != null ? searchCriteria.getAmount():''}"
+                           placeholder="amount">
+
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div>
+                <a href="/legalCase" class="btn btn-outline-secondary me-2">
+                    <i class="bi bi-arrow-repeat me-1"></i><span th:text="#{legalCases.showAll}">Show All</span>
+                </a>
+                <a href="/legalCases/add" class="btn btn-success">
+                    <i class="bi bi-plus-circle me-1"></i><span th:text="#{legalCases.add}">Add LegalCase</span>
+                </a>
+            </div>
+        </div>
+
+        <div th:if="${legalCases == null || legalCases.isEmpty()}" class="alert alert-info text-center">
+            <i class="bi bi-info-circle me-1"></i><span th:text="#{legalCases.empty}">No legalCases found.</span>
+        </div>
+
+        <div th:if="${legalCases != null && !legalCases.isEmpty()}" class="table-responsive">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                <tr>
+                    <th th:text="#{table.picture}">Picture</th>
+                    <th th:text="#{table.id}">Id</th>
+                    <th th:text="#{form.title}">Title</th>
+                    <th th:text="#{form.description}">Description</th>
+                    <th th:text="#{table.amount}">Amount</th>
+                    <th th:text="#{table.status}">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="legalCase : ${LegalCases}">
+                    <td>
+                        <img th:if="${legalCase.getPictureName() != null && !legalCase.getPictureName().equals('')}"
+                             th:src="@{/image/get(picName=${legalCase.pictureName})}"
+                             class="legalCase-thumbnail" alt="legalCase photo">
+                        <img th:if="${legalCase.getPictureName() == null || legalCase.getPictureName().equals('')}"
+                             th:src="@{/images/img.png}"
+                             class="legalCase-thumbnail" alt="Default photo">
+                    </td>
+                    <td th:text="${legalCase.id}"></td>
+                    <td th:text="${legalCase.title}"></td>
+                    <td th:text="${legalCase.description}"></td>
+                    <td th:text="${LegalCase.amount}"></td>
+                    <td th:text="${LegalCase.status}"></td>
+
+                    <td>
+
+                    </td>
+
+                    <a th:each="user : ${legalCase.getUsers()}"
+                       th:href="@{/legalCase(userId=${user.id})}"
+                       class="badge bg-secondary text-decoration-none"
+                       th:text="${user.name}"></a>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <nav th:if="${legalCases.totalPages > 1}" aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" th:classappend="${legalCases.number == 0} ? 'disabled'">
+                        <a class="page-link" th:href="@{/legalCases(size=${LegalCases.size}, page=${LegalCases.number})}">&laquo;</a>
+                    </li>
+                    <li th:each="pageNumber : ${pageNumbers}"
+                        class="page-item"
+                        th:classappend="${pageNumber == legalCases.number + 1} ? 'active'">
+                        <a class="page-link"
+                           th:href="@{/legalCases(size=${legalCases.size}, page=${pageNumber})}"
+                           th:text="${pageNumber}"></a>
+                    </li>
+                    <li class="page-item" th:classappend="${legalCases.number + 1 == legalCases.totalPages} ? 'disabled'">
+                        <a class="page-link" th:href="@{/legalCases(size=${legalCases.size}, page=${legalCases.number + 2})}">&raquo;</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</th:block>
+
+</body>
+</html>
