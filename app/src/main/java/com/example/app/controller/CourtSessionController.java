@@ -34,6 +34,7 @@ public class CourtSessionController {
     @GetMapping("/courtSessions/delete")
     public String deleteCourtSessions(@RequestParam("id") int id) {
         courtSessionService.deleteById((long) id);
+        //test branch test change
         return "redirect:/courtSessions";
     }
 
@@ -49,7 +50,5 @@ public class CourtSessionController {
 
     }
 }
-
-
 
 
