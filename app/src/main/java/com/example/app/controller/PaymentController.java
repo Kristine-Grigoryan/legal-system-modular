@@ -1,13 +1,19 @@
 package com.example.app.controller;
 
 import com.example.app.service.SpringUser;
+import com.example.model.CourtSession;
+import com.example.model.LegalCase;
+import com.example.model.Payment;
+import com.example.repository.LegalCaseRepository;
+import com.example.service.LegalCaseService;
 import com.example.service.PaymentService;
-import com.model.Payment;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,39 +21,65 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-
 @Controller
 @RequiredArgsConstructor
-@Slf4j
+ @Slf4j
 public class PaymentController {
 
     private final PaymentService paymentService;
+    private final LegalCaseService legalCaseService;
 
-    @GetMapping("/payment")
-    public String payment(ModelMap modelMap, @AuthenticationPrincipal SpringUser springUser) {
+
+    @GetMapping("/payments")
+    public String payments(ModelMap modelMap, @AuthenticationPrincipal SpringUser springUser) {
         List<Payment> payments = paymentService.findAll();
-        modelMap.addAttribute("Payment", payments);
-
+        modelMap.addAttribute("payments", payments);
         return "payments";
     }
+    @GetMapping("/payments/add")
+    public String addPaymentsForm(ModelMap modelMap) {
+        modelMap.addAttribute("legalCases", legalCaseService.findAll());
+        return "addPayments";
+    }
+
+
 
     @GetMapping("/payments/delete")
-    public String deletes(@RequestParam("id") int id) {
+    public String delete(@RequestParam("id") long id) {
         paymentService.deleteById((long) id);
-        return "redirect:/paymants";
-    }
-
-    @GetMapping("/paymants/add")
-    public String paymants() {
-        return "addPaymants";
-    }
-
-    @PostMapping("/paymants/add")
-    public String addPaymants(@ModelAttribute Payment payments) {
-        paymentService.save(payments);
         return "redirect:/payments";
-
     }
+    @PostMapping("/payments/add")
+    public String savePayment(@ModelAttribute("payment") Payment payment) {
+        LegalCase existingCase = legalCaseService.findById(payment.getLegalCase().getId());
+        payment.setLegalCase(existingCase);
+        paymentService.save(payment);
+        //       test branch test change
+        return "redirect:/payments";
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

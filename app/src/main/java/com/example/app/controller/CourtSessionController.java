@@ -1,8 +1,8 @@
 package com.example.app.controller;
 
 import com.example.app.service.SpringUser;
+import com.example.model.CourtSession;
 import com.example.service.CourtSessionService;
-import com.model.CourtSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -15,40 +15,43 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-
 @Controller
 @RequiredArgsConstructor
 @Slf4j
 public class CourtSessionController {
 
+
     private final CourtSessionService courtSessionService;
 
-    @GetMapping("/courtSession")
-    public String courtSession(ModelMap modelMap, @AuthenticationPrincipal SpringUser springUser) {
-        List<CourtSession> courtSessionss = courtSessionService.findAll();
-        modelMap.addAttribute("courtSession", courtSessionss);
+
+    @GetMapping("/courtSessions")
+    public String courtSessions(ModelMap modelMap, @AuthenticationPrincipal SpringUser springUser) {
+        List<CourtSession> courtSessions = courtSessionService.findAll();
+        modelMap.addAttribute("courtSessions", courtSessions);
 
         return "courtSessions";
     }
 
     @GetMapping("/courtSessions/delete")
     public String deleteCourtSessions(@RequestParam("id") int id) {
-        courtSessionService.deleteById((long) id);
-        //test branch test change
+        courtSessionService.deleteById ((long) id);
         return "redirect:/courtSessions";
     }
 
     @GetMapping("/courtSessions/add")
-    public String courtSessions() {
+    public String addCourtSessions() {
         return "addCourtSessions";
     }
 
-    @PostMapping("/courtSession/add")
-    public String addCourtSessions(@ModelAttribute CourtSession courtSessions) {
-        courtSessionService.save(courtSessions);
+    @PostMapping("/courtSessions/add")
+    public String addCourtSessions(@ModelAttribute CourtSession courtSession) {
+        courtSessionService.save(courtSession);
         return "redirect:/courtSessions";
 
     }
 }
+
+
+
 
 

@@ -1,7 +1,7 @@
 package com.example.service.impl;
+import com.example.model.*;
+import com.example.repository.LegalCaseRepository;
 import com.example.service.LegalCaseService;
-import com.model.LegalCase;
-import com.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,11 +11,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import repository.LegalCaseRepository;
+
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -24,9 +25,11 @@ import java.util.List;
 @Slf4j
 public class LegalCaseServiceImpl implements LegalCaseService {
 
+
+
     private final LegalCaseRepository legalCaseRepository;
 
-    @Value("${legal.system.upload.image.directory.path.}")
+    @Value("${legal.system.upload.image.directory.path}")
     private String imageDirectoryPath;
 
 
@@ -35,21 +38,9 @@ public class LegalCaseServiceImpl implements LegalCaseService {
         return legalCaseRepository.findAll(pageable);
     }
 
-    @Override
-    public LegalCase save(LegalCase legalCase, MultipartFile multipartFile) {
-        if (multipartFile != null && !multipartFile.isEmpty()) {
-            String fileName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
-            File file = new File(imageDirectoryPath + fileName);
-            try {
-                multipartFile.transferTo(file);
-                legalCase.setPictureName(fileName);
-            } catch (IOException e) {
-                log.error("Error while saving image for student {}: {}, {}", legalCase.getTitle(), e.getMessage(), e.getStackTrace());
-            }
-        }
 
-        return legalCaseRepository.save(legalCase);
-    }
+
+
 
     @Override
     public List<LegalCase> findByUser(User user) {
@@ -61,6 +52,74 @@ public class LegalCaseServiceImpl implements LegalCaseService {
     public Page<LegalCase> findAllWithSpecification(Specification<LegalCase> spec) {
         return legalCaseRepository.findAll(spec, Pageable.unpaged());
     }
+        @Override
+        public LegalCase save(LegalCase legalCase, MultipartFile multipartFile) {
+            // 1. Եթե կա նկար՝ պահում ենք
+            if (multipartFile != null && !multipartFile.isEmpty()) {
+                String fileName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
+                File file = new File(imageDirectoryPath + File.separator + fileName);
+                try {
+                    multipartFile.transferTo(file);
+                    legalCase.setPictureName(fileName);
+                } catch (IOException e) {
+                    log.error("Error while saving image for legalCase {}: {}, {}", legalCase.getTitle(), e.getMessage(), e.getStackTrace());
+                }
+            }
+
+            // 2. Child entities (courtSessions) կապում ենք parent-ի հետ՝ որ FK-ները ճիշտ լրանան
+            if (legalCase.getCourtSessions() != null) {
+                for (CourtSession session : legalCase.getCourtSessions()) {
+                    session.setLegalCase(legalCase);
+                }
+                if (legalCase.getPayments() != null) {
+                    for (Payment p : legalCase.getPayments()) {
+                        p.setLegalCase(legalCase);
+                    }
+                }
+
+                }
+
+
+
+
+            // 3. Եթե ունես payment-ներ կամ caseDocuments, նույնը արա նրանց հետ
+
+            // 4. Պահում ենք ամբողջ օբյեկտը
+            return legalCaseRepository.save(legalCase);
+        }
+
+
+
+
+    @Override
+    public List<LegalCase> findAll() {
+        return legalCaseRepository.findAll();
+
+    }
+
+        @Override
+        public void deleteById(Long id) {
+            legalCaseRepository.deleteById(id);
+        }
+    @Override
+    public LegalCase findById(Long id) {
+        return legalCaseRepository.findById(id).orElse(null);
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

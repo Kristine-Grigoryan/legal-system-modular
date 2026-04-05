@@ -1,11 +1,12 @@
 package com.example.service.impl;
+import com.example.model.Payment;
+import com.example.repository.PaymentRepository;
 import com.example.service.PaymentService;
-import com.model.Payment;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import repository.PaymentRepository;
+
 
 import java.util.List;
 
@@ -15,8 +16,9 @@ import java.util.List;
 @Slf4j
 public class PaymentServiceImpl implements PaymentService {
 
+
     private final PaymentRepository paymentRepository;
-    private final PaymentService paymentService;
+
 
     @Override
     public List<Payment> findAll() {
@@ -34,9 +36,9 @@ public class PaymentServiceImpl implements PaymentService {
         return paymentRepository.findById(id).orElse(null);
     }
 
+
     @Override
     public void deleteById(Long id) {
         paymentRepository.deleteById(id);
     }
-
 }

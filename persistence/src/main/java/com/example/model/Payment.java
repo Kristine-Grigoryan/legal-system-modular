@@ -1,10 +1,11 @@
-package com.model;
+package com.example.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 
 @Data
@@ -18,12 +19,13 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private double amount;
+    private Double amount;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate paidDate;
     private String method;
 
 
-   @ManyToOne
-   @JoinColumn(name="case_id")
-   private  LegalCase legalCase;
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "case_id")
+    private LegalCase legalCase;
 }

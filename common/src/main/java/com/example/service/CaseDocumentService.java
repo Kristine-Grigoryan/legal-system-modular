@@ -1,6 +1,6 @@
 package com.example.service;
 
-import com.model.CaseDocument;
+import com.example.model.CaseDocument;
 
 import java.util.List;
 
@@ -16,5 +16,3 @@ public interface CaseDocumentService {
     void deleteById(Long id);
 
 }
-
-

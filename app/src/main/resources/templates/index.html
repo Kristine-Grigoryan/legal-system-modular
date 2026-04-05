@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Legal System</title>
+</head>
+<body>
+
+<th:block th:replace="~{fragments/layout :: layout(~{::title}, ~{::section})}">
+    <title>Legal  System</title>
+    <section>
+        <div class="hero-section rounded-3 p-5 mb-4 text-center">
+            <h1 class="display-5 fw-bold">
+                <i class="bi bi-mortarboard-fill me-2"></i>Legal System
+            </h1>
+
+            <!-- Authenticated currentUser -->
+            <th:block th:if="${currentUser} != null">
+                <p class="lead mt-3">
+                    <span th:text="#{header.welcome}">Welcome</span>,
+                    <strong th:text="${currentUser.getName() + ' ' + currentUser.getSurname()}"></strong>!
+                </p>
+                <div class="mt-4">
+                    <a href="/legalCases" class="btn btn-primary btn-lg me-2">
+                        <i class="bi bi-people-fill me-1"></i> <span th:text="#{header.legalCases}">LegalCases</span>
+                    </a>
+                    <a href="/courtSessions" class="btn btn-success btn-lg">
+                        <i class="bi bi-book-fill me-1"></i> <span th:text="#{header.courtSessions}">CourtSessions</span>
+                    </a>
+                    <a href="/payments" class="btn btn-success btn-lg">
+                        <i class="bi bi-book-fill me-1"></i> <span th:text="#{header.payments}">Payments</span>
+                    </a>
+                    <a href="/caseDocuments" class="btn btn-success btn-lg">
+                        <i class="bi bi-book-fill me-1"></i> <span th:text="#{header.caseDocuments}">CaseDocuments</span>
+                    </a>
+
+                </div>
+            </th:block>
+
+            <!-- Not authenticated -->
+            <th:block th:if="${currentUser} == null">
+                <p class="lead mt-3" th:text="#{home.subtitle}">Manage your legalCases, courtSession, CaseDocument and payments in one place.</p>
+                <div class="mt-4">
+                    <a href="/loginPage" class="btn btn-primary btn-lg me-2">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> <span th:text="#{main.login}">Login</span>
+                    </a>
+                    <a href="/registerPage" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-person-plus-fill me-1"></i> <span th:text="#{main.register}">Register</span>
+                    </a>
+                </div>
+            </th:block>
+        </div>
+    </section>
+</th:block>
+
+</body>
+</html>

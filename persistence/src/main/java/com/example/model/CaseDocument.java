@@ -1,10 +1,11 @@
-package com.model;
+package com.example.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDateTime;
 
 @Data
@@ -14,15 +15,20 @@ import java.time.LocalDateTime;
 @Table(name = "case_document")
 public class CaseDocument {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name="file_name")
     private String fileName;
+    @Column(name="file_path")
     private String filePath;
+    @Column(name="file_type")
     private String fileType;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDateTime uploadedAt;
 
-   @ManyToOne
-   @JoinColumn(name="case_id")
-   private  LegalCase  legalCase;
+    @ManyToOne
+    @JoinColumn(name="case_id")
+    private LegalCase legalCase;
 }

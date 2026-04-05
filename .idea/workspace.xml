@@ -4,53 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/I18nConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/SpringUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/CourtSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/LegalCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/model/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CaseDocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/CourtSessionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/LegalCaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="test commit push for pullRequest demo">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/MailConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/1_init_db.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/2_create-legal_case_table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/3_create_court_session_table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/4_create_case_document_table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/5_create_payment_table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/6_insert_mock_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages_hy.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages_ru.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/images/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addCaseDocuments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addCourtSessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addLegalCases.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addPayments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/adminHome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/caseDocuments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/courtSessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/legalCases.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/mail/verificationMailTemplate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/mail/verifyUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/payments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/registerPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/SendEmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/SendEmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/LegalCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/SpringUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/SpringUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CaseDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/CourtSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CourtSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/LegalCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/CaseDocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CaseDocumentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/CourtSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CourtSessionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/LegalCaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/LegalCaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +99,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SHOW_RECENT_BRANCHES" value="false" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kristine-Grigoryan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kristine-Grigoryan/legal-system-modular.git&quot;,
+    &quot;accountId&quot;: &quot;7691fdd4-7054-465f-8128-812d608c8dad&quot;
+  }
+}</component>
   <component name="HttpClientOnboardingState">{
   &quot;isOnboardingCommentShown&quot;: true
 }</component>
@@ -87,6 +136,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.AppApplicationTests.executor": "Run",
+    "Maven.app [clean].executor": "Run",
     "Maven.legal-system-modular [clean].executor": "Run",
     "Maven.legal-system-modular [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -98,15 +148,20 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AppApplication.executor": "Run",
-    "git-widget-placeholder": "new-branch",
+    "git-widget-placeholder": "develop-branch",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Users/User/IdeaProjects/legal-system-modular-2/app/src/main/java/com/example/app/service/security",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -118,6 +173,13 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\java\com\example\app\service\security" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\static\images" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\templates" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\persistence\src\main\java\com\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.service.impl" />
@@ -152,6 +214,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppApplicationTests" />
         <item itemvalue="JUnit.AppApplicationTests" />
       </list>
     </recent_temporary>
@@ -267,7 +330,130 @@
       <workItem from="1772833009839" duration="26000" />
       <workItem from="1772833170433" duration="2326000" />
       <workItem from="1772875385844" duration="3101000" />
+      <workItem from="1774195578497" duration="77000" />
+      <workItem from="1774695831066" duration="20000" />
+      <workItem from="1774695880030" duration="88000" />
+      <workItem from="1774696762903" duration="1969000" />
+      <workItem from="1774698776184" duration="1679000" />
+      <workItem from="1774700514129" duration="12000" />
+      <workItem from="1774700749673" duration="69000" />
+      <workItem from="1774700846017" duration="20000" />
+      <workItem from="1774700892223" duration="18000" />
+      <workItem from="1774700952078" duration="1090000" />
+      <workItem from="1774702091113" duration="46000" />
+      <workItem from="1774704975316" duration="5000" />
+      <workItem from="1774705068546" duration="509000" />
+      <workItem from="1774705602413" duration="6671000" />
+      <workItem from="1774716839953" duration="1918000" />
+      <workItem from="1774718811707" duration="66000" />
+      <workItem from="1774718898209" duration="858000" />
+      <workItem from="1774719785863" duration="1672000" />
+      <workItem from="1774725200253" duration="1702000" />
+      <workItem from="1774726967772" duration="1485000" />
+      <workItem from="1774783591371" duration="4856000" />
+      <workItem from="1774795071872" duration="42000" />
+      <workItem from="1774795186048" duration="2974000" />
+      <workItem from="1774801116026" duration="16690000" />
+      <workItem from="1774868293219" duration="1823000" />
+      <workItem from="1774870192483" duration="1495000" />
+      <workItem from="1774871751047" duration="5001000" />
+      <workItem from="1774879777379" duration="315000" />
+      <workItem from="1774880140048" duration="853000" />
+      <workItem from="1774881071970" duration="2839000" />
+      <workItem from="1774888270824" duration="2184000" />
+      <workItem from="1774890533078" duration="1151000" />
+      <workItem from="1774891776242" duration="790000" />
+      <workItem from="1774895565149" duration="2647000" />
+      <workItem from="1774898461550" duration="2509000" />
+      <workItem from="1774958613795" duration="1810000" />
+      <workItem from="1774960500263" duration="2130000" />
+      <workItem from="1774962735087" duration="230000" />
+      <workItem from="1774962996943" duration="161000" />
+      <workItem from="1774963181602" duration="123000" />
+      <workItem from="1774963360261" duration="1663000" />
+      <workItem from="1774965090928" duration="1273000" />
+      <workItem from="1774973623882" duration="1211000" />
+      <workItem from="1774974900074" duration="4960000" />
+      <workItem from="1774979986428" duration="8278000" />
+      <workItem from="1774989235578" duration="36000" />
+      <workItem from="1774989303925" duration="18000" />
+      <workItem from="1774989372989" duration="186000" />
+      <workItem from="1774989595260" duration="11000" />
+      <workItem from="1774989650525" duration="19000" />
+      <workItem from="1774989711117" duration="51000" />
+      <workItem from="1774989787266" duration="9000" />
+      <workItem from="1775064472172" duration="1170000" />
+      <workItem from="1775068534113" duration="249000" />
+      <workItem from="1775068827509" duration="446000" />
+      <workItem from="1775069310994" duration="1121000" />
+      <workItem from="1775071083349" duration="43000" />
+      <workItem from="1775071156686" duration="84000" />
+      <workItem from="1775071305350" duration="28000" />
+      <workItem from="1775071479697" duration="258000" />
+      <workItem from="1775071849165" duration="2985000" />
+      <workItem from="1775074874334" duration="45000" />
+      <workItem from="1775074973322" duration="52000" />
+      <workItem from="1775075102241" duration="125000" />
+      <workItem from="1775075298539" duration="474000" />
+      <workItem from="1775075808410" duration="261000" />
+      <workItem from="1775076090898" duration="146000" />
+      <workItem from="1775076287014" duration="47000" />
+      <workItem from="1775076377939" duration="145000" />
+      <workItem from="1775076551381" duration="32000" />
+      <workItem from="1775076617117" duration="631000" />
+      <workItem from="1775077295178" duration="216000" />
+      <workItem from="1775077552924" duration="1032000" />
+      <workItem from="1775078678982" duration="102000" />
+      <workItem from="1775078809637" duration="1484000" />
+      <workItem from="1775130195082" duration="1756000" />
+      <workItem from="1775137469535" duration="1730000" />
+      <workItem from="1775149910669" duration="611000" />
+      <workItem from="1775151689458" duration="875000" />
+      <workItem from="1775152607280" duration="66000" />
+      <workItem from="1775152702158" duration="153000" />
+      <workItem from="1775152894158" duration="144000" />
+      <workItem from="1775153068168" duration="1576000" />
+      <workItem from="1775154774952" duration="137000" />
+      <workItem from="1775154945821" duration="21000" />
+      <workItem from="1775155006177" duration="3463000" />
+      <workItem from="1775158823194" duration="856000" />
+      <workItem from="1775159736490" duration="397000" />
+      <workItem from="1775160168893" duration="1104000" />
+      <workItem from="1775161332476" duration="2336000" />
+      <workItem from="1775223048404" duration="1065000" />
+      <workItem from="1775224613111" duration="547000" />
+      <workItem from="1775225482424" duration="3022000" />
+      <workItem from="1775228576723" duration="755000" />
+      <workItem from="1775229392978" duration="212000" />
+      <workItem from="1775234161023" duration="9712000" />
+      <workItem from="1775245501424" duration="4584000" />
+      <workItem from="1775250178148" duration="5684000" />
+      <workItem from="1775255965709" duration="3471000" />
+      <workItem from="1775310362648" duration="14000" />
+      <workItem from="1775310477042" duration="5294000" />
+      <workItem from="1775320465399" duration="75000" />
+      <workItem from="1775320598660" duration="12000" />
+      <workItem from="1775320634424" duration="4231000" />
+      <workItem from="1775325045879" duration="790000" />
+      <workItem from="1775325872356" duration="954000" />
+      <workItem from="1775326882691" duration="641000" />
+      <workItem from="1775327563762" duration="677000" />
+      <workItem from="1775328275433" duration="989000" />
+      <workItem from="1775329335828" duration="5593000" />
+      <workItem from="1775390231854" duration="11947000" />
+      <workItem from="1775406844645" duration="3760000" />
+      <workItem from="1775410690497" duration="794000" />
+      <workItem from="1775411522729" duration="6130000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit push for pullRequest demo">
+      <option name="closed" value="true" />
+      <created>1774123287443</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774123287443</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +482,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit push for pullRequest demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit push for pullRequest demo" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -304,50 +494,52 @@
           <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java</url>
-          <line>22</line>
-          <properties class="com.example.service.impl.CaseDocumentServiceImpl" method="findAll">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java</url>
-          <line>15</line>
-          <properties class="com.example.service.CaseDocumentService" method="deleteById">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
+          <line>2</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java</url>
-          <line>18</line>
-          <properties class="com.example.service.LegalCaseService" method="save">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java</url>
-          <line>23</line>
-          <properties class="com.example.service.impl.UserServiceImpl" method="findByUsername">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="9" />
+          <line>16</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java</url>
-          <line>20</line>
-          <properties class="com.example.service.LegalCaseService" method="findByUser">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java</url>
+          <line>51</line>
+          <properties class="com.example.service.impl.LegalCaseServiceImpl" method="findAllWithSpecification">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java</url>
+          <line>17</line>
+          <properties class="com.example.service.PaymentService" method="deleteById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java</url>
+          <line>15</line>
+          <properties class="com.example.service.CourtSessionService" method="deleteById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

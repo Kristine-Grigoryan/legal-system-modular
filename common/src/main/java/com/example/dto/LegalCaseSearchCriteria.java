@@ -1,6 +1,7 @@
 package com.example.dto;
 
-import com.model.Status;
+
+import com.example.model.Status;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;

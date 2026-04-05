@@ -1,35 +1,60 @@
 spring:
+  liquibase:
+    enabled: true
+    change-log: classpath:db/master.xml
   application:
-    name: legal-system
+    name: legal-system-modular
   datasource:
     url: jdbc:mysql://localhost:3306/legal_system
     username: ${DB_USERNAME :root}
     password: ${DB_PASSWORD :root}
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name:  com.mysql.jdbc.Driver
+
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: java92850@gmail.com
+    password: inpukygtkqjhxyad
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
   servlet:
     multipart:
       max-file-size: 10MB
+  profiles:
+    active:
 
 server:
-  port: 8085
+  port: 8084
 
 legal:
   system:
     upload:
       image:
         directory:
-          path: G:\Users\User\IdeaPro\src\main\resources\static\images\img.png
+          path:   G:/uploads/
 
 logging:
   file:
-    name: G:\Users\User\IdeaProjects\legal-system\log
+    name: logs/app.log
   logback:
     rollingpolicy:
       max-file-size: 10MB
-      max-history: 30
+      max-history: 3
   level:
     root: INFO
+    org.thymeleaf: DEBUG
+    org.springframework.web: DEBUG
     org.hibernate.SQL: DEBUG
-    com.example.legalsystem.controller: DEBUG
+    com.example.legalsystemmodular.controller: DEBUG
+

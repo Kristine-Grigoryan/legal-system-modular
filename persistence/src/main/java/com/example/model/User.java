@@ -1,9 +1,10 @@
-package com.model;
+package com.example.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.Id;
+
 import java.util.List;
 
 @Data
@@ -17,12 +18,15 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Integer   id;
 
-    private String fullName;
+    private String name;
+    private String surname;
     private String phone;
-    private String email;
     private String address;
     private String username;
     private String password;
+    private Boolean enabled;
+    private String verificationCode;
+
     @Enumerated(value = EnumType.STRING)
     private UserRole role;
 
