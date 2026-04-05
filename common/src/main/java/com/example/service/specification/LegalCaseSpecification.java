@@ -1,8 +1,8 @@
 package com.example.service.specification;
 
 import com.example.dto.LegalCaseSearchCriteria;
-import com.model.LegalCase;
-import com.model.Status;
+import com.example.model.LegalCase;
+import com.example.model.Status;
 import jakarta.persistence.criteria.*;
 import org.jspecify.annotations.Nullable;
 import org.springframework.data.jpa.domain.Specification;

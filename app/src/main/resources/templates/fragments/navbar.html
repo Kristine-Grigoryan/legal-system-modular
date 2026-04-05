@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <i class="bi bi-mortarboard-fill me-2"></i>Legal System
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto" th:if="${currentUser} != null">
+                <li class="nav-item">
+                    <a class="nav-link" href="/legalCases" th:text="#{header.legalCases}">LegalCases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/courtSessions" th:text="#{header.courtSessions}">CourtSessions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/payments" th:text="#{header.payments}">Payments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/caseDocuments" th:text="#{header.caseDocuments}">CaseDocuments</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto align-items-center">
+                <!-- Language dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-translate me-1"></i>Language
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                        <li><a class="dropdown-item" href="?lang=ru">Русский</a></li>
+                        <li><a class="dropdown-item" href="?lang=hy">Հայերեն</a></li>
+                    </ul>
+                </li>
+                <!-- Authenticated currentUser -->
+                <th:block th:if="${currentUser} != null">
+                    <li class="nav-item">
+                        <span class="nav-link text-light">
+                            <i class="bi bi-person-circle me-1"></i>
+                            <span th:text="#{header.welcome}">Welcome</span>,
+                            <span th:text="${currentUser.getName() + ' ' + currentUser.getSurname()}"></span>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light btn-sm ms-2" href="/logout" th:text="#{nav.logout}">Logout</a>
+                    </li>
+                </th:block>
+                <!-- Not authenticated -->
+                <th:block th:if="${currentUser} == null">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/loginPage" th:text="#{main.login}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/registerPage" th:text="#{main.register}">Register</a>
+                    </li>
+                </th:block>
+            </ul>
+        </div>
+    </div>
+</nav>
+</body>
+</html>
+

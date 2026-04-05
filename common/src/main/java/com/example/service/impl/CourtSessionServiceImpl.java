@@ -1,11 +1,12 @@
 package com.example.service.impl;
+import com.example.model.CourtSession;
+import com.example.repository.CourtSessionRepository;
 import com.example.service.CourtSessionService;
-import com.model.CourtSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import repository.CourtSessionRepository;
+
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
 public class CourtSessionServiceImpl implements CourtSessionService {
 
     private final CourtSessionRepository courtSessionRepository;
-    private final CourtSessionService courtSessionService;
+
 
     @Override
     public List<CourtSession> findAll() {
@@ -37,5 +38,6 @@ public class CourtSessionServiceImpl implements CourtSessionService {
     public void deleteById(Long id) {
         courtSessionRepository.deleteById(id);
     }
+
 
 }

@@ -1,9 +1,10 @@
 package com.example.app.controller;
 
 import com.example.app.service.SpringUser;
+import com.example.model.User;
+import com.example.model.UserRole;
 import com.example.service.UserService;
-import com.model.User;
-import com.model.UserRole;
+
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,7 +22,7 @@ import java.io.IOException;
     @RequiredArgsConstructor
     public class MainController {
 
-        @Value("${legal.system.upload.image.directory.path.portal.}")
+        @Value("${legal.system.upload.image.directory.path}")
         private String imageDirectoryPath;
 
         private final PasswordEncoder passwordEncoder;
@@ -69,7 +70,28 @@ import java.io.IOException;
             return "redirect:/loginPage?msg=Registration successful, pls login!";
         }
 
-        @GetMapping("/image/get")
+
+        @GetMapping("/user/verify")
+        public String verifyUserPage(@RequestParam("email") String email, ModelMap modelMap) {
+            modelMap.addAttribute("email", email);
+            return "verifyUser";
+        }
+
+        @PostMapping("/user/verify")
+        public String verifyUser(@RequestParam("email") String email, @RequestParam("verifyCode") String verifyCode) {
+            boolean isVerified = userService.verifyUser(email, verifyCode);
+            if (isVerified) {
+                return "redirect:/loginPage?msg=User verified successfully, pls Login!";
+            }
+            return "redirect:/loginPage?msg=Verification code is invalid!";
+
+
+        }
+
+
+
+
+    @GetMapping("/image/get")
         public @ResponseBody byte[] getImage(@RequestParam("picName") String picName) {
             File file = new File(imageDirectoryPath + picName);
             if (file.exists() && file.isFile()) {

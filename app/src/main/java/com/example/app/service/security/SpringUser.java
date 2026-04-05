@@ -1,7 +1,8 @@
 package com.example.app.service;
+import com.example.model.User;
 import lombok.Getter;
 import org.springframework.security.core.authority.AuthorityUtils;
-import com.model.User;
+
 
 import java.util.Objects;
 

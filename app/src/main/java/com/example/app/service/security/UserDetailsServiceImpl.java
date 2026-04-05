@@ -1,7 +1,8 @@
 package com.example.app.service;
 
+import com.example.model.User;
 import com.example.service.UserService;
-import com.model.User;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

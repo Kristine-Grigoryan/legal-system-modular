@@ -1,0 +1,23 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="4" author="kgrigoryan">
+        <createTable tableName="legal_case">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(255)"/>
+            <column name="description" type="text"/>
+            <column name="status" type="Enum('OPEN','IN_PROGRESS','WON','CLOSED','LOST')" defaultValue="OPEN"/>
+            <column name="amount" type="decimal(19,2)"/>
+            <column name="picture_name" type="varchar(255)"/>
+            <column name="user_id" type="bigint">
+
+                <constraints foreignKeyName="fk_legal_case_user"
+                             referencedTableName="user"
+                             referencedColumnNames="id"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

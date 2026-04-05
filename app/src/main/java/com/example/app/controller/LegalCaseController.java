@@ -1,20 +1,21 @@
 package com.example.app.controller;
 
 import com.example.dto.LegalCaseSearchCriteria;
+import com.example.model.LegalCase;
+import com.example.model.Status;
+import com.example.model.User;
 import com.example.service.LegalCaseService;
 import com.example.service.UserService;
 import com.example.service.specification.LegalCaseSpecification;
-import com.model.LegalCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 import java.util.Optional;
@@ -24,21 +25,23 @@ import java.util.stream.IntStream;
     @RequiredArgsConstructor
     public class LegalCaseController {
 
+
     private final UserService userService;
     private final LegalCaseService legalCaseService;
 
-    @GetMapping("/legalCase")
+
+    @GetMapping("/legalCases")
     public String legalCases(ModelMap modelMap,
-                             @RequestParam("page") Optional<Integer> page,
-                             @RequestParam("size") Optional<Integer> size,
-                             @ModelAttribute LegalCaseSearchCriteria searchCriteria
+                           @RequestParam("page") Optional<Integer> page,
+                           @RequestParam("size") Optional<Integer> size,
+                           @ModelAttribute LegalCaseSearchCriteria searchCriteria
     ) {
-        if (searchCriteria.getTitle() == null && searchCriteria.getDescription() == null && searchCriteria.getStatus() == null && searchCriteria.getAmount() == null) {
-            int currentPage = page.orElse(1);
+        if (searchCriteria.getTitle() == null && searchCriteria.getDescription() == null && searchCriteria.getAmount() == null) {
+            int currentPage = page.orElse(0);
             int pageSize = size.orElse(5);
             Sort sort = Sort.by(Sort.Direction.DESC, "id");
 
-            PageRequest pageRequest = PageRequest.of(currentPage - 1, pageSize, sort);
+            PageRequest pageRequest = PageRequest.of(currentPage, pageSize, sort);
 
             Page<LegalCase> result = legalCaseService.findAll(pageRequest);
 
@@ -51,33 +54,50 @@ import java.util.stream.IntStream;
                 modelMap.addAttribute("pageNumbers", pageNumbers);
             }
 
-            modelMap.addAttribute("legalCase", result);
+            modelMap.addAttribute("legalCases", result);
         } else {
-            LegalCaseSpecification legalCaseSpecification = new LegalCaseSpecification(searchCriteria);
-            Page<LegalCase> result = legalCaseService.findAllWithSpecification(legalCaseSpecification);
+            LegalCaseSpecification studentSpecification = new LegalCaseSpecification(searchCriteria);
+            Page<LegalCase> result = legalCaseService.findAllWithSpecification(studentSpecification);
             modelMap.addAttribute("legalCases", result);
             modelMap.addAttribute("searchCriteria", searchCriteria);
 
         }
-
-
         return "legalCases";
     }
-
-    @GetMapping("/legalCases/add")
-    public String addLegalCasePage(ModelMap modelMap) {
+    @GetMapping("/LegalCases/add")
+    public String addLegalCasePages(ModelMap modelMap) {
+        modelMap.addAttribute("legalCase",new LegalCase());
         modelMap.addAttribute("users", userService.findAll());
-        return "addLegalCase";
+        modelMap.addAttribute("statuses", Status.values());
+        return "addLegalCases";
+
     }
 
+    @GetMapping("/LegalCases/edit/{id}")
+    public String editLegalCasePage(@PathVariable("id") long id, ModelMap modelMap) {
+        LegalCase legalCase = legalCaseService.findById(id);
+        modelMap.addAttribute("legalCase", legalCase);
+        modelMap.addAttribute("users", userService.findAll());
+        modelMap.addAttribute("statuses", Status.values());
+        return "addLegalCases";
+    }
+//       test branch test change
 
-    @PostMapping("/legalcases/add")
-    public String addLegalCase(@ModelAttribute LegalCase legalCase,
-                             @RequestParam("pic") MultipartFile multipartFile) {
-        legalCaseService.save(legalCase, multipartFile);
+    @GetMapping("/legalCases/delete")
+    public String delete(@RequestParam("id") long id) {
+        legalCaseService.deleteById((long) id);
         return "redirect:/legalCases";
     }
 
 
-}
+    @PostMapping("/legalCases/update")
+    public String updateLegalCase(@ModelAttribute LegalCase legalCase,
+                                  @RequestParam("pic") MultipartFile multipartFile) {
+        legalCaseService.save(legalCase, multipartFile);
+        return "redirect:/legalCases";
+
+    }
+
+
+     }
 
