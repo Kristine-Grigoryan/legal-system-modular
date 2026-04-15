@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "\"user\"")
 public class User {
 
     @Id
@@ -24,7 +24,7 @@ public class User {
     private String address;
     private String username;
     private String password;
-    private Boolean enabled;
+    private boolean enabled;
     private String verificationCode;
 
     @Enumerated(value = EnumType.STRING)

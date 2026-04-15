@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: rest
+  datasource:
+    url: jdbc:postgresql://localhost:5432/legal_system
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+legal:
+system:
+  upload:
+    image:
+      directory:
+        path:  G:/uploads/
+
+
+jwt:
+  secret:
+  expiration: 600000
+server:
+  port: 8085
+

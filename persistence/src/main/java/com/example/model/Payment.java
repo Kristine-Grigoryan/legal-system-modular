@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
@@ -19,10 +20,11 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Double amount;
+    private BigDecimal amount;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate paidDate;
-    private String method;
+    @Enumerated(value = EnumType.STRING)
+    private PaymentMethod method;
 
 
     @ManyToOne(cascade = CascadeType.PERSIST)

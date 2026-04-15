@@ -1,5 +1,5 @@
 package com.example.service.impl;
-import com. example.model.User;
+import com.example.model.User;
 import com.example.service.SendEmailService;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
@@ -54,19 +54,20 @@ public class UserServiceImpl implements UserService {
         return false;
     }
 
+    @Override
+    public List<User> findAll() {
+        return userRepository. findAll();
+    }
+
     private String generateVerificationCode() {
         int code = random.nextInt(1000, 9999);
         return String.valueOf(code);
     }
 
-
-    @Override
-    public List<User> findAll() {
-        return userRepository.findAll();
-    }
-
-
-
-
 }
+
+
+
+
+
 

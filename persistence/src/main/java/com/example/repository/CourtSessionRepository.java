@@ -1,6 +1,7 @@
-package repository;
+package com.example.repository;
 
-import com.model.CourtSession;
+
+import com.example.model.CourtSession;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

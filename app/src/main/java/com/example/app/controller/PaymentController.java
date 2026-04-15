@@ -1,19 +1,16 @@
 package com.example.app.controller;
 
 import com.example.app.service.SpringUser;
-import com.example.model.CourtSession;
-import com.example.model.LegalCase;
-import com.example.model.Payment;
-import com.example.repository.LegalCaseRepository;
+import com.example.model.*;
+
 import com.example.service.LegalCaseService;
 import com.example.service.PaymentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,18 +27,24 @@ public class PaymentController {
     private final LegalCaseService legalCaseService;
 
 
+
     @GetMapping("/payments")
     public String payments(ModelMap modelMap, @AuthenticationPrincipal SpringUser springUser) {
         List<Payment> payments = paymentService.findAll();
         modelMap.addAttribute("payments", payments);
+
         return "payments";
     }
+
+
     @GetMapping("/payments/add")
     public String addPaymentsForm(ModelMap modelMap) {
         modelMap.addAttribute("legalCases", legalCaseService.findAll());
+
+        modelMap.addAttribute("methods", PaymentMethod.values());
+
         return "addPayments";
     }
-
 
 
     @GetMapping("/payments/delete")
@@ -54,7 +57,6 @@ public class PaymentController {
         LegalCase existingCase = legalCaseService.findById(payment.getLegalCase().getId());
         payment.setLegalCase(existingCase);
         paymentService.save(payment);
-        //       test branch test change
         return "redirect:/payments";
     }
 

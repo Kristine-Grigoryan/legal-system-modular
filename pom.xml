@@ -14,11 +14,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-        <packaging>pom</packaging>
+    <packaging>pom</packaging>
 
-        <modules>
-            <module>persistence</module>
-            <module>common</module>
-            <module>app</module>
-        </modules>
+    <modules>
+        <module>persistence</module>
+        <module>common</module>
+        <module>app</module>
+        <module>rest</module>
+    </modules>
 </project>
