@@ -15,26 +15,35 @@
                         <div class="card-header bg-success text-white">
                             <h4 class="mb-0"><i class="bi bi-plus-circle me-2"></i><span th:text="#{payments.add}">Add Payments</span></h4>
                         </div>
-                        <div class="card-body p-4">
-                            <form action="/payments/add" method="post">
-                                <div class="mb-3">
-                                    <div class="col-md-6">
+                        <form action="/payments/add" method="post">
+
+                            <div class="mb-3">
                                 <label for="amount" class="form-label" th:text="#{form.amount}">Amount</label>
-                                <input type="number" step="0.01"  class="form-control" id="amount"  th:placeholder="#{form.amount}">
+                                <input type="number" step="0.01" class="form-control"
+                                       id="amount" name="amount"
+                                       th:placeholder="#{form.amount}">
                             </div>
 
-                                <div class="col-md-6">
-                                    <label for="paidDate" class="form-label" th:text="#{form.paidDate}">Paid Date</label>
-                                    <input type="date" class="form-control" id="paidDate"  name="paidDate" th:placeholder="#{form.paidDate }">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="method" class="form-label" th:text="#{form.method}">Method</label>
-                                    <input type="text" class="form-control" id="method" name="method" th:placeholder="#{ form.method}">
-                                </div>
-                                    <div class="mb-3">
-                                        <label for="caseId" class="form-label" th:text="#{table.caseId}">Case ID</label>
-                                        <input type="number" class="form-control" id="caseId" name="legalCase.id" th:placeholder="#{ table.caseId}">
-                                    </div>
+                            <div class="mb-3">
+                                <label for="paidDate" class="form-label" th:text="#{form.paidDate}">Paid Date</label>
+                                <input type="date" class="form-control"
+                                       id="paidDate" name="paidDate"th:placeholder="#{form.paidDate}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="method" class="form-label" th:text="#{form.method}">PaymentMethod</label>
+                                <select class="form-select" id="method" name="method"th:placeholder="#{form.method}">
+                                    <option th:each="methodValue : ${methods}"
+                                            th:value="${methodValue}"
+                                            th:text="${methodValue}">
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="caseId" class="form-label" th:text="#{table.caseId}">Case ID</label>
+                                <input type="number" class="form-control" id="caseId" name="legalCase.id" th:placeholder="#{ table.caseId}">
+                            </div>
+                            </select>
 
                             <div class="d-flex gap-2">
                                 <button type="submit" class="btn btn-success">
@@ -48,9 +57,3 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</th:block>
-
-</body>
-</html>

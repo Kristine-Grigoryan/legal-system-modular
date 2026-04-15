@@ -16,7 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 
 @Service
@@ -65,29 +64,8 @@ public class LegalCaseServiceImpl implements LegalCaseService {
                     log.error("Error while saving image for legalCase {}: {}, {}", legalCase.getTitle(), e.getMessage(), e.getStackTrace());
                 }
             }
-
-            // 2. Child entities (courtSessions) կապում ենք parent-ի հետ՝ որ FK-ները ճիշտ լրանան
-            if (legalCase.getCourtSessions() != null) {
-                for (CourtSession session : legalCase.getCourtSessions()) {
-                    session.setLegalCase(legalCase);
-                }
-                if (legalCase.getPayments() != null) {
-                    for (Payment p : legalCase.getPayments()) {
-                        p.setLegalCase(legalCase);
-                    }
-                }
-
-                }
-
-
-
-
-            // 3. Եթե ունես payment-ներ կամ caseDocuments, նույնը արա նրանց հետ
-
-            // 4. Պահում ենք ամբողջ օբյեկտը
-            return legalCaseRepository.save(legalCase);
-        }
-
+                    return legalCaseRepository.save(legalCase);
+            }
 
 
 

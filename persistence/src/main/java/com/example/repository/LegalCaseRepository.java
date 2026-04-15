@@ -1,6 +1,6 @@
-package repository;
-import com.model.LegalCase;
-import com.model.User;
+package com.example.repository;
+import com.example.model.LegalCase;
+import com.example.model.User;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

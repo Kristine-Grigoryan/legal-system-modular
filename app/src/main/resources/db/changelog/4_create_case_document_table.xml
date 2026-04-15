@@ -1,21 +1,20 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-
-    <changeSet id="4" author="kgrigoryan">
+    <changeSet id="create-case-document-table" author="kgrigoryan">
         <createTable tableName="case_document">
             <column name="id" type="bigint" autoIncrement="true">
-                <constraints primaryKey="true"/>
-            </column>
-            <column name="file_name" type="varchar(255)"/>
-            <column name="file_type" type="varchar(255)"/>
-            <column name="file_path" type="varchar(255)"/>
-            <column name="uploaded_at" type="timestamp"/>
-            <column name="case_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="file_name" type="varchar(255)"/>
+        <column name="file_type" type="varchar(255)"/>
+        <column name="file_path" type="varchar(255)"/>
+        <column name="uploaded_at" type="timestamp"/>
+        <column name="case_id" type="bigint">
 
-                <constraints foreignKeyName="fk_case_document_case"
-                             referencedTableName="legal_case"
-                             referencedColumnNames="id"/>
-            </column>
-        </createTable>
-    </changeSet>
-</databaseChangeLog>
+            <constraints foreignKeyName="fk_case_document_case"
+                         referencedTableName="legal_case"
+                         referencedColumnNames="id"/>
+        </column>
+    </createTable>
+</changeSet>
+        </databaseChangeLog>

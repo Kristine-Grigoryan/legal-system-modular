@@ -1,5 +1,6 @@
-package repository;
-import com.model.CaseDocument;
+package com.example.repository;
+
+import com.example.model.CaseDocument;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

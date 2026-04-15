@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -29,10 +28,5 @@ public class LegalCase {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "legalCase", cascade = CascadeType.ALL)
-    private List<CourtSession> courtSessions;
-
-    @OneToMany(mappedBy = "legalCase", cascade = CascadeType.ALL)
-    private List<Payment> payments;
 
 }

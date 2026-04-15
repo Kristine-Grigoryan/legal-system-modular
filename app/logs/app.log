@@ -1,0 +1,58 @@
+2026-04-12T01:21:24.486+04:00  INFO 10220 --- [legal-system-modular] [main] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 21.0.10 with PID 10220 (started by User in G:\Users\User\IdeaProjects\legal-system-modular-2\app)
+2026-04-12T01:21:24.489+04:00  INFO 10220 --- [legal-system-modular] [main] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-04-12T01:21:24.683+04:00 DEBUG 10220 --- [legal-system-modular] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ce53f6a
+2026-04-12T01:21:26.321+04:00  INFO 10220 --- [legal-system-modular] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-12T01:21:26.425+04:00  INFO 10220 --- [legal-system-modular] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 6 JPA repository interfaces.
+2026-04-12T01:21:28.397+04:00  INFO 10220 --- [legal-system-modular] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-12T01:21:29.031+04:00  INFO 10220 --- [legal-system-modular] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f24ce45
+2026-04-12T01:21:29.035+04:00  INFO 10220 --- [legal-system-modular] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-12T01:21:29.896+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.database                       : Set default schema name to public
+2026-04-12T01:21:31.574+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/1_init_db.xml
+2026-04-12T01:21:32.714+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2026-04-12T01:21:32.729+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/2_create-legal_case_table.xml
+2026-04-12T01:21:32.959+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/3_create_court_session_table.xml
+2026-04-12T01:21:33.071+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/4_create_case_document_table.xml
+2026-04-12T01:21:33.197+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/5_create_payment_table.xml
+2026-04-12T01:21:33.280+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/6_create_country_table.xml
+2026-04-12T01:21:33.345+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading resource: db/changelog/7_insert_mock_data.xml
+2026-04-12T01:21:33.757+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-04-12T01:21:33.761+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2026-04-12T01:21:33.847+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : UPDATE SUMMARY
+2026-04-12T01:21:33.850+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : Run:                          0
+2026-04-12T01:21:33.851+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : Previously run:              10
+2026-04-12T01:21:33.854+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : Filtered out:                 0
+2026-04-12T01:21:33.854+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : -------------------------------
+2026-04-12T01:21:33.855+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : Total change sets:           10
+2026-04-12T01:21:33.858+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.util                           : Update summary generated
+2026-04-12T01:21:33.875+04:00  INFO 10220 --- [legal-system-modular] [main] liquibase.command                        : Command execution complete
+2026-04-12T01:21:35.487+04:00  INFO 10220 --- [legal-system-modular] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-12T01:21:35.701+04:00  INFO 10220 --- [legal-system-modular] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-04-12T01:21:37.161+04:00  INFO 10220 --- [legal-system-modular] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-12T01:21:37.324+04:00  INFO 10220 --- [legal-system-modular] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/legal_system]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.17
+	Default catalog/schema: legal_system/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-12T01:21:39.224+04:00  INFO 10220 --- [legal-system-modular] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-12T01:21:39.453+04:00  INFO 10220 --- [legal-system-modular] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12T01:21:39.762+04:00  INFO 10220 --- [legal-system-modular] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-12T01:21:42.355+04:00  WARN 10220 --- [legal-system-modular] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12T01:21:42.679+04:00  INFO 10220 --- [legal-system-modular] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-12T01:21:42.680+04:00  WARN 10220 --- [legal-system-modular] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-12T01:21:43.441+04:00  INFO 10220 --- [legal-system-modular] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-04-12T01:21:43.612+04:00 DEBUG 10220 --- [legal-system-modular] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2026-04-12T01:21:43.695+04:00 DEBUG 10220 --- [legal-system-modular] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-04-12T01:21:43.812+04:00 DEBUG 10220 --- [legal-system-modular] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-04-12T01:21:43.997+04:00 DEBUG 10220 --- [legal-system-modular] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-04-12T01:21:44.493+04:00  INFO 10220 --- [legal-system-modular] [main] com.example.app.AppApplicationTests      : Started AppApplicationTests in 20.837 seconds (process running for 23.925)
+2026-04-12T01:21:46.013+04:00 DEBUG 10220 --- [legal-system-modular] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3ce53f6a, started on Sun Apr 12 01:21:24 AMT 2026
+2026-04-12T01:21:46.030+04:00  INFO 10220 --- [legal-system-modular] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-12T01:21:46.037+04:00  INFO 10220 --- [legal-system-modular] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-12T01:21:46.076+04:00  INFO 10220 --- [legal-system-modular] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
