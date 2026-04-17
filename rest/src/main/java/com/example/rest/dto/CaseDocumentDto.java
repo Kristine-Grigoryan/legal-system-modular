@@ -4,28 +4,24 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PaymentDto {
+public class CaseDocumentDto {
 
 
 
     private Long id;
+    private String fileName;
+    private String filePath;
+    private String fileType;
+    private LocalDateTime uploadedAt;
+    private Long caseId;
 
-    private LocalDate paymentDate;
-    private String method;
-    private Long legalCaseId;
-    private BigDecimal amount;
-    private BigDecimal amountUSD;
-    private BigDecimal amountEUR;
-    private BigDecimal amountRUB;
+
 
 }
 

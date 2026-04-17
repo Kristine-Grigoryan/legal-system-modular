@@ -1,7 +1,7 @@
 package com.example.app.controller;
 
-import com.example.dto.LegalCaseSearchCriteria;
 import com.example.model.LegalCase;
+import com.example.model.LegalCaseSearchCriteria;
 import com.example.model.Status;
 import com.example.service.LegalCaseService;
 import com.example.service.UserService;

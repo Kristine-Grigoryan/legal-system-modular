@@ -98,7 +98,6 @@ import java.io.IOException;
                 try {
                     return FileUtils.readFileToByteArray(file);
                 } catch (IOException e) {
-                    e.printStackTrace();
                 }
             }
             return null;
