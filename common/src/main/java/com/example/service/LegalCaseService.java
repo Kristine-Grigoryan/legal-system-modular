@@ -15,8 +15,6 @@ public interface LegalCaseService {
 
         LegalCase save(LegalCase legalCase, MultipartFile multipartFile);
 
-
-
         List<LegalCase> findByUser(User user);
 
         Page<LegalCase> findAllWithSpecification(Specification<LegalCase> spec);

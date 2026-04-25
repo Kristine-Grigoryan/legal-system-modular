@@ -1,0 +1,25 @@
+2026-04-25T15:35:43.514+04:00  INFO 12584 --- [legal-system-modular] [main] com.example.app.AppApplication           : Starting AppApplication using Java 21.0.10 with PID 12584 (G:\Users\User\IdeaProjects\legal-system-modular-2\app\target\classes started by User in G:\Users\User\IdeaProjects\legal-system-modular-2)
+2026-04-25T15:35:43.545+04:00  INFO 12584 --- [legal-system-modular] [main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-04-25T15:35:45.186+04:00  INFO 12584 --- [legal-system-modular] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-25T15:35:45.370+04:00  INFO 12584 --- [legal-system-modular] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 162 ms. Found 6 JPA repository interfaces.
+2026-04-25T15:35:46.907+04:00  INFO 12584 --- [legal-system-modular] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2026-04-25T15:35:46.938+04:00  INFO 12584 --- [legal-system-modular] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-25T15:35:46.939+04:00  INFO 12584 --- [legal-system-modular] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-25T15:35:47.055+04:00  INFO 12584 --- [legal-system-modular] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-25T15:35:47.056+04:00  INFO 12584 --- [legal-system-modular] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3364 ms
+2026-04-25T15:35:47.389+04:00  INFO 12584 --- [legal-system-modular] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-25T15:35:47.570+04:00  INFO 12584 --- [legal-system-modular] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-25T15:35:47.682+04:00  INFO 12584 --- [legal-system-modular] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-25T15:35:48.363+04:00  INFO 12584 --- [legal-system-modular] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-25T15:35:48.421+04:00  INFO 12584 --- [legal-system-modular] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-25T15:35:48.757+04:00  INFO 12584 --- [legal-system-modular] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@371cd2fc
+2026-04-25T15:35:48.760+04:00  INFO 12584 --- [legal-system-modular] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-25T15:35:51.716+04:00  INFO 12584 --- [legal-system-modular] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-25T15:35:52.049+04:00  INFO 12584 --- [legal-system-modular] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-25T15:35:52.784+04:00  INFO 12584 --- [legal-system-modular] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-25T15:35:53.474+04:00  WARN 12584 --- [legal-system-modular] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-25T15:35:53.549+04:00  INFO 12584 --- [legal-system-modular] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-25T15:35:53.551+04:00  WARN 12584 --- [legal-system-modular] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-04-25T15:35:53.750+04:00  INFO 12584 --- [legal-system-modular] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-25T15:35:54.746+04:00  INFO 12584 --- [legal-system-modular] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2026-04-25T15:35:54.759+04:00  INFO 12584 --- [legal-system-modular] [main] com.example.app.AppApplication           : Started AppApplication in 14.118 seconds (process running for 16.995)

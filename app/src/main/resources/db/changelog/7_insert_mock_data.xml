@@ -5,59 +5,57 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
 
-
-    <changeSet id="insert-mock-user" author="kgrigoryan">
-
-        <insert tableName="user">
-
-            <column name="name" value="Armen"/>
-            <column name="surname" value="Armenyan"/>
-            <column name="phone" value="094112233"/>
-            <column name="address" value="Yerevan, Armenia"/>
-            <column name="username" value="armen99"/>
-            <column name="password" value="admin123"/>
+    <!-- 1. USER -->
+    <changeSet id="user-1" author="system">
+        <insert tableName="users">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="John"/>
+            <column name="surname" value="Doe"/>
+            <column name="username" value="john.doe@example.com"/>
+            <column name="password" value="encoded_password_here"/>
             <column name="enabled" valueBoolean="true"/>
-            <column name="role" value="ADMIN"/>
-
+            <column name="role" value="USER"/>
         </insert>
-
     </changeSet>
 
-
-    <changeSet id="insert-mock-case" author="kgrigoryan">
+    <!-- 2. LEGAL CASE -->
+    <changeSet id="case-1" author="system">
         <insert tableName="legal_case">
-            <column name="title" value="Property Dispute #101"/>
-            <column name="description" value="Case regarding real estate boundaries in Gyumri"/>
-            <column name="amount" valueNumeric="5000.50"/>
+            <column name="id" valueNumeric="1"/>
+            <column name="title" value="Contract Dispute #101"/>
+            <column name="description" value="Initial breach of contract investigation."/>
+            <column name="amount" valueNumeric="1500.00"/>
             <column name="status" value="OPEN"/>
             <column name="user_id" valueNumeric="1"/>
         </insert>
     </changeSet>
 
-
-    <changeSet id="insert-mock-document" author="kgrigoryan">
-        <insert tableName="case_document">
-            <column name="file_name" value="contract.pdf"/>
-            <column name="file_type" value="application/pdf"/>
-            <column name="file_path" value="/uploads/cases/1/contract.pdf"/>
-            <column name="uploaded_at" valueDate="2026-04-10"/>
+    <!-- 3. COURT SESSION -->
+    <changeSet id="session-1" author="system">
+        <insert tableName="court_session">
+            <column name="session_date" valueDate="2026-05-20"/>
+            <column name="courtroom" value="Room 302B"/>
+            <column name="notes" value="Pre-trial hearing for discovery."/>
             <column name="case_id" valueNumeric="1"/>
         </insert>
     </changeSet>
 
+    <!-- 4. DOCUMENT -->
+    <changeSet id="doc-1" author="system">
+        <insert tableName="case_document">
+            <column name="file_name" value="contract.pdf"/>
+            <column name="file_type" value="application/pdf"/>
+            <column name="file_path" value="/uploads/contract.pdf"/>
+            <column name="case_id" valueNumeric="1"/>
+        </insert>
+    </changeSet>
 
-    <changeSet id="insert-mock-details" author="kgrigoryan">
+    <!-- 5. PAYMENT -->
+    <changeSet id="payment-1" author="system">
         <insert tableName="payment">
             <column name="amount" valueNumeric="1500.00"/>
             <column name="paid_date" valueDate="2026-03-10"/>
-            <column name="method" value="BANK"/>
-            <column name="case_id" valueNumeric="1"/>
-        </insert>
-
-        <insert tableName="court_session">
-            <column name="session_date" valueDate="2026-04-15"/>
-            <column name="courtroom" value="Room 4B"/>
-            <column name="notes" value="Preliminary hearing for property dispute"/>
+            <column name="method" value="BANK_TRANSFER"/>
             <column name="case_id" valueNumeric="1"/>
         </insert>
     </changeSet>

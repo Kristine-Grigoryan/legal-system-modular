@@ -2,6 +2,7 @@ package com.example.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "payment")
 public class Payment {
@@ -22,6 +24,7 @@ public class Payment {
 
     private BigDecimal amount;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Column(name="paid_date")
     private LocalDate paidDate;
     @Enumerated(value = EnumType.STRING)
     private PaymentMethod method;
@@ -30,4 +33,6 @@ public class Payment {
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "case_id")
     private LegalCase legalCase;
+
+
 }

@@ -2,6 +2,7 @@ package com.example.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
@@ -9,6 +10,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "legal_case")
 public class LegalCase {
@@ -27,6 +29,4 @@ public class LegalCase {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
-
-}
+    }

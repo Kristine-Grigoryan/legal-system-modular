@@ -1,7 +1,7 @@
 package com.example.app.controller;
 
-import com.example.dto.LegalCaseSearchCriteria;
 import com.example.model.LegalCase;
+import com.example.model.LegalCaseSearchCriteria;
 import com.example.model.Status;
 import com.example.service.LegalCaseService;
 import com.example.service.UserService;
@@ -30,9 +30,9 @@ import java.util.stream.IntStream;
 
     @GetMapping("/legalCases")
     public String legalCases(ModelMap modelMap,
-                           @RequestParam("page") Optional<Integer> page,
-                           @RequestParam("size") Optional<Integer> size,
-                           @ModelAttribute LegalCaseSearchCriteria searchCriteria
+                             @RequestParam("page") Optional<Integer> page,
+                             @RequestParam("size") Optional<Integer> size,
+                             @ModelAttribute LegalCaseSearchCriteria searchCriteria
     ) {
         if (searchCriteria.getTitle() == null && searchCriteria.getDescription() == null && searchCriteria.getAmount() == null) {
             int currentPage = page.orElse(0);
@@ -62,9 +62,10 @@ import java.util.stream.IntStream;
         }
         return "legalCases";
     }
+
     @GetMapping("/LegalCases/add")
     public String addLegalCasePages(ModelMap modelMap) {
-        modelMap.addAttribute("legalCase",new LegalCase());
+        modelMap.addAttribute("legalCase", new LegalCase());
         modelMap.addAttribute("users", userService.findAll());
         modelMap.addAttribute("statuses", Status.values());
         return "addLegalCases";
@@ -79,7 +80,7 @@ import java.util.stream.IntStream;
         modelMap.addAttribute("statuses", Status.values());
         return "addLegalCases";
     }
-
+    
 
     @GetMapping("/legalCases/delete")
     public String delete(@RequestParam("id") long id) {

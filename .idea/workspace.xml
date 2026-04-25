@@ -5,84 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655a6364-d77e-4d84-aba9-009b552371a0" name="Changes" comment="test commit push for pullRequest demo">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/MailConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/1_init_db.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/2_create-legal_case_table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/3_create_court_session_table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/4_create_case_document_table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/5_create_payment_table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/6_insert_mock_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/db/master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages_hy.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/messages_ru.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/images/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addCaseDocuments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addCourtSessions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addLegalCases.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addPayments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/adminHome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/caseDocuments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/courtSessions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/legalCases.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/mail/verificationMailTemplate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/mail/verifyUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/payments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/registerPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/SendEmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/SendEmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/LegalCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6461637-5c83-4023-a485-87fbc932ee8f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/AppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CaseDocumentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/CourtSessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/LegalCaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/controller/UserControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/SpringUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/SpringUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/SpringUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/app/service/security/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/1_init_db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/1_init_db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/2_create-legal_case_table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/2_create-legal_case_table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/3_create_court_session_table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/3_create_court_session_table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/4_create_case_document_table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/4_create_case_document_table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/5_create_payment_table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/5_create_payment_table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/6_create_country_table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/6_create_country_table.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/changelog/7_insert_mock_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/db/changelog/7_insert_mock_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/static/images/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/static/images/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/addPayments.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/addPayments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/app/AppApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CaseDocumentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/CourtSessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/dto/LegalCaseSearchCriteria.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/LegalCaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CaseDocumentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/CourtSessionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/SendEmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/SendEmailServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/service/specification/LegalCaseSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/CaseDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CaseDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/CourtSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CourtSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/LegalCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/model/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/CaseDocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CaseDocumentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/CourtSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CourtSessionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/LegalCaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/LegalCaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/PaymentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CaseDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CaseDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CourtSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/CourtSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/LegalCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/LegalCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/model/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/CountryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/LegalCaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/repository/LegalCaseRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,13 +61,14 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="legal-sytem-all-modul" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,74 +100,191 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AppApplicationTests.executor": "Run",
-    "Maven.app [clean].executor": "Run",
-    "Maven.legal-system-modular [clean].executor": "Run",
-    "Maven.legal-system-modular [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AppApplication.executor": "Run",
-    "git-widget-placeholder": "develop-branch",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/Users/User/IdeaProjects/legal-system-modular-2/app/src/main/java/com/example/app/service/security",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AppApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaseDocumentServiceImplTest.testDeleteById_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaseDocumentServiceImplTest.testFindAll_ReturnsList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaseDocumentServiceImplTest.testFindById_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaseDocumentServiceImplTest.testFindById_ThrowsException_WhenNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CaseDocumentServiceImplTest.testSave_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.deleteById_ShouldDelete_WhenExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.deleteById_ShouldInvokeRepository.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.deleteById_ShouldThrowException_WhenNotExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.findAll_ShouldReturnDtoList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.findById_ShouldReturnDto_WhenExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.findById_ShouldReturnDto_WhenIdExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.findById_ShouldThrowException_WhenNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.save_ShouldReturnSavedDto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.save_ShouldThrowException_WhenCaseNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.update_ShouldReturnUpdatedDto.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourtSessionServiceImplTest.update_ShouldThrowException_WhenNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LegalCaseEndpointIntegrationTest.shouldCreateLegalCase.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LegalCaseEndpointIntegrationTest.shouldDeleteLegalCase.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LegalCaseEndpointIntegrationTest.shouldGetAllLegalCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LegalCaseEndpointIntegrationTest.shouldGetLegalCaseById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceImplTest.testFindById_Found.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceImplTest.testFindById_NotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StringUtilTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StringUtilTest.isNullOrEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StringUtilTest.isNullOrEmpty_empty_true.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StringUtilTest.isNullOrEmpty_null_true.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserEndpointIntegrationTest.anonymous_requestToSecuredEndpoint_returnsUnauthorized.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserEndpointIntegrationTest.auth_wrongPassword_returnsUnauthorized.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.app [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.app [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.legal-system-modular [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.legal-system-modular [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.legal-system-modular [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.persistence [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.persistence [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.persistence [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.rest [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;rest-module-setup&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;G:/Users/User/IdeaProjects/legal-system-modular-2/rest/src/main/java/com/example/rest/util&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Users/User/IdeaProjects/legal-system-modular-2/rest/src/src/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.app.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\rest\src\src\test" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\db" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\db\changelog" />
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\rest\src\test\java\com\example\rest\service" />
       <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\java\com\example\app\service\security" />
-      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\static\images" />
-      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources\templates" />
-      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\app\src\main\resources" />
-      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\persistence\src\main\java\com\example" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Users\User\IdeaProjects\legal-system-modular-2\rest\src\src" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.rest.util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.rest.endpoint" />
+      <recent name="com.example.rest.service.impl" />
+      <recent name="com.example.rest.service" />
+      <recent name="com.example.rest.service.currency" />
       <recent name="com.example.service.impl" />
-      <recent name="com.example.service" />
-      <recent name="com.example.app.controller" />
-      <recent name="repository" />
-      <recent name="com.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppApplication">
-    <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="app" />
+  <component name="RunManager" selected="Spring Boot.RestApplication">
+    <configuration name="CourtSessionServiceImplTest.deleteById_ShouldDelete_WhenExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.app.*" />
+          <option name="PATTERN" value="com.example.rest.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.app" />
-      <option name="MAIN_CLASS_NAME" value="com.example.app.AppApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.rest.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.rest.service.impl.CourtSessionServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteById_ShouldDelete_WhenExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourtSessionServiceImplTest.deleteById_ShouldThrowException_WhenNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rest.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.rest.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.rest.service.impl.CourtSessionServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteById_ShouldThrowException_WhenNotExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourtSessionServiceImplTest.update_ShouldThrowException_WhenNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rest.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.rest.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.example.rest.service.impl.CourtSessionServiceImplTest" />
+      <option name="METHOD_NAME" value="update_ShouldThrowException_WhenNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserEndpointIntegrationTest.anonymous_requestToSecuredEndpoint_returnsUnauthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rest.endpoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.rest.endpoint" />
+      <option name="MAIN_CLASS_NAME" value="com.example.rest.endpoint.UserEndpointIntegrationTest" />
+      <option name="METHOD_NAME" value="anonymous_requestToSecuredEndpoint_returnsUnauthorized" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserEndpointIntegrationTest.auth_wrongPassword_returnsUnauthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rest.endpoint.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.rest.endpoint" />
+      <option name="MAIN_CLASS_NAME" value="com.example.rest.endpoint.UserEndpointIntegrationTest" />
+      <option name="METHOD_NAME" value="auth_wrongPassword_returnsUnauthorized" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,10 +296,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rest.RestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppApplicationTests" />
-        <item itemvalue="JUnit.AppApplicationTests" />
+        <item itemvalue="JUnit.CourtSessionServiceImplTest.deleteById_ShouldDelete_WhenExists" />
+        <item itemvalue="JUnit.UserEndpointIntegrationTest.auth_wrongPassword_returnsUnauthorized" />
+        <item itemvalue="JUnit.UserEndpointIntegrationTest.anonymous_requestToSecuredEndpoint_returnsUnauthorized" />
+        <item itemvalue="JUnit.CourtSessionServiceImplTest.deleteById_ShouldThrowException_WhenNotExists" />
+        <item itemvalue="JUnit.CourtSessionServiceImplTest.update_ShouldThrowException_WhenNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -444,6 +538,171 @@
       <workItem from="1775406844645" duration="3760000" />
       <workItem from="1775410690497" duration="794000" />
       <workItem from="1775411522729" duration="6130000" />
+      <workItem from="1776507524735" duration="1334000" />
+      <workItem from="1776508919454" duration="310000" />
+      <workItem from="1776509453262" duration="2534000" />
+      <workItem from="1776512138411" duration="2029000" />
+      <workItem from="1776514267054" duration="1144000" />
+      <workItem from="1776518840449" duration="44000" />
+      <workItem from="1776520002793" duration="11000" />
+      <workItem from="1776532631940" duration="33000" />
+      <workItem from="1776532770090" duration="52000" />
+      <workItem from="1776532884482" duration="18000" />
+      <workItem from="1776533424199" duration="1782000" />
+      <workItem from="1776535268258" duration="1569000" />
+      <workItem from="1776538311037" duration="12000" />
+      <workItem from="1776538364122" duration="782000" />
+      <workItem from="1776539189131" duration="157000" />
+      <workItem from="1776539640497" duration="274000" />
+      <workItem from="1776540007733" duration="123000" />
+      <workItem from="1776540168457" duration="30000" />
+      <workItem from="1776540252874" duration="360000" />
+      <workItem from="1776540661600" duration="292000" />
+      <workItem from="1776541014091" duration="855000" />
+      <workItem from="1776541952937" duration="50000" />
+      <workItem from="1776542048314" duration="384000" />
+      <workItem from="1776542470392" duration="872000" />
+      <workItem from="1776543437409" duration="56000" />
+      <workItem from="1776543602232" duration="441000" />
+      <workItem from="1776544113510" duration="149000" />
+      <workItem from="1776544731755" duration="1379000" />
+      <workItem from="1776546182035" duration="72000" />
+      <workItem from="1776546284703" duration="5000" />
+      <workItem from="1776546306599" duration="1730000" />
+      <workItem from="1776548085858" duration="82000" />
+      <workItem from="1776548220420" duration="2198000" />
+      <workItem from="1776607595776" duration="1166000" />
+      <workItem from="1776608852971" duration="690000" />
+      <workItem from="1776609597578" duration="24000" />
+      <workItem from="1776609678205" duration="6000" />
+      <workItem from="1776609724151" duration="153000" />
+      <workItem from="1776609944584" duration="48000" />
+      <workItem from="1776610062127" duration="111000" />
+      <workItem from="1776610191135" duration="37000" />
+      <workItem from="1776610269058" duration="59000" />
+      <workItem from="1776610348827" duration="1180000" />
+      <workItem from="1776611584400" duration="216000" />
+      <workItem from="1776611829642" duration="1582000" />
+      <workItem from="1776618195898" duration="4378000" />
+      <workItem from="1776623049377" duration="15981000" />
+      <workItem from="1776682654489" duration="943000" />
+      <workItem from="1776684009253" duration="174000" />
+      <workItem from="1776684208671" duration="46000" />
+      <workItem from="1776684286935" duration="157000" />
+      <workItem from="1776684474781" duration="52000" />
+      <workItem from="1776684679300" duration="4809000" />
+      <workItem from="1776765718290" duration="2823000" />
+      <workItem from="1776768761737" duration="124000" />
+      <workItem from="1776768939063" duration="96000" />
+      <workItem from="1776769119640" duration="352000" />
+      <workItem from="1776769571413" duration="1064000" />
+      <workItem from="1776770694253" duration="448000" />
+      <workItem from="1776771193962" duration="1633000" />
+      <workItem from="1776773201243" duration="2449000" />
+      <workItem from="1776775699263" duration="36000" />
+      <workItem from="1776775781343" duration="23000" />
+      <workItem from="1776775824335" duration="212000" />
+      <workItem from="1776776089232" duration="536000" />
+      <workItem from="1776776751578" duration="489000" />
+      <workItem from="1776777308079" duration="497000" />
+      <workItem from="1776791523307" duration="133000" />
+      <workItem from="1776791991106" duration="2261000" />
+      <workItem from="1776794720091" duration="633000" />
+      <workItem from="1776795420580" duration="732000" />
+      <workItem from="1776796484593" duration="1495000" />
+      <workItem from="1776798030384" duration="4275000" />
+      <workItem from="1776869717825" duration="19000" />
+      <workItem from="1776869801557" duration="34000" />
+      <workItem from="1776870401819" duration="593000" />
+      <workItem from="1776871128623" duration="47000" />
+      <workItem from="1776871417734" duration="13000" />
+      <workItem from="1776871968772" duration="70000" />
+      <workItem from="1776872154322" duration="32000" />
+      <workItem from="1776872206258" duration="26000" />
+      <workItem from="1776872316571" duration="24000" />
+      <workItem from="1776872359582" duration="224000" />
+      <workItem from="1776872695158" duration="96000" />
+      <workItem from="1776872856170" duration="157000" />
+      <workItem from="1776873052041" duration="59000" />
+      <workItem from="1776873176417" duration="49000" />
+      <workItem from="1776873314400" duration="101000" />
+      <workItem from="1776873471430" duration="243000" />
+      <workItem from="1776873744987" duration="2104000" />
+      <workItem from="1776876420247" duration="414000" />
+      <workItem from="1776876953617" duration="59000" />
+      <workItem from="1776877075939" duration="1231000" />
+      <workItem from="1776878465141" duration="391000" />
+      <workItem from="1776878976708" duration="785000" />
+      <workItem from="1776879806040" duration="2246000" />
+      <workItem from="1776882792974" duration="34000" />
+      <workItem from="1776882858461" duration="29000" />
+      <workItem from="1776882907720" duration="489000" />
+      <workItem from="1776883510889" duration="190000" />
+      <workItem from="1776883816144" duration="238000" />
+      <workItem from="1776884533359" duration="122000" />
+      <workItem from="1776884690689" duration="1652000" />
+      <workItem from="1776886664475" duration="20000" />
+      <workItem from="1776886714855" duration="107000" />
+      <workItem from="1776886867191" duration="15000" />
+      <workItem from="1776886906523" duration="10000" />
+      <workItem from="1776886951282" duration="513000" />
+      <workItem from="1776887530286" duration="290000" />
+      <workItem from="1776887874751" duration="59000" />
+      <workItem from="1776888134057" duration="90000" />
+      <workItem from="1776888275656" duration="143000" />
+      <workItem from="1776888445940" duration="254000" />
+      <workItem from="1776888737494" duration="25000" />
+      <workItem from="1776888805656" duration="88000" />
+      <workItem from="1776888963446" duration="762000" />
+      <workItem from="1776892460415" duration="8000" />
+      <workItem from="1776892537357" duration="186000" />
+      <workItem from="1776892783885" duration="172000" />
+      <workItem from="1776893166933" duration="197000" />
+      <workItem from="1776893441464" duration="297000" />
+      <workItem from="1776893785622" duration="48000" />
+      <workItem from="1776893912614" duration="2125000" />
+      <workItem from="1776896110194" duration="55000" />
+      <workItem from="1776941019467" duration="1919000" />
+      <workItem from="1776943022953" duration="302000" />
+      <workItem from="1776963333669" duration="452000" />
+      <workItem from="1776963974684" duration="2361000" />
+      <workItem from="1776966611049" duration="1770000" />
+      <workItem from="1776968489212" duration="714000" />
+      <workItem from="1776969274700" duration="1008000" />
+      <workItem from="1776970480187" duration="3704000" />
+      <workItem from="1776974330835" duration="8566000" />
+      <workItem from="1776983024761" duration="1456000" />
+      <workItem from="1777020664762" duration="4011000" />
+      <workItem from="1777024758241" duration="64000" />
+      <workItem from="1777024849692" duration="558000" />
+      <workItem from="1777025439426" duration="1011000" />
+      <workItem from="1777026567613" duration="3486000" />
+      <workItem from="1777030129634" duration="3979000" />
+      <workItem from="1777034178393" duration="12000" />
+      <workItem from="1777034222539" duration="135000" />
+      <workItem from="1777034499118" duration="21000" />
+      <workItem from="1777034542721" duration="36000" />
+      <workItem from="1777034605719" duration="10571000" />
+      <workItem from="1777045382629" duration="5078000" />
+      <workItem from="1777059190320" duration="1369000" />
+      <workItem from="1777060657919" duration="926000" />
+      <workItem from="1777061642622" duration="190000" />
+      <workItem from="1777061975356" duration="56000" />
+      <workItem from="1777062188441" duration="83000" />
+      <workItem from="1777062305777" duration="328000" />
+      <workItem from="1777062738125" duration="280000" />
+      <workItem from="1777063128904" duration="100000" />
+      <workItem from="1777063296082" duration="40000" />
+      <workItem from="1777063377150" duration="120000" />
+      <workItem from="1777063595135" duration="7185000" />
+      <workItem from="1777108466794" duration="6803000" />
+      <workItem from="1777115381445" duration="127000" />
+      <workItem from="1777115549131" duration="62000" />
+      <workItem from="1777115660423" duration="65000" />
+      <workItem from="1777115767894" duration="67000" />
+      <workItem from="1777115874268" duration="15000" />
+      <workItem from="1777115978919" duration="539000" />
+      <workItem from="1777116634945" duration="6151000" />
     </task>
     <task id="LOCAL-00001" summary="test commit push for pullRequest demo">
       <option name="closed" value="true" />
@@ -505,19 +764,24 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/UserServiceImpl.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java</url>
           <line>25</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/src/java/com/example/rest/endpoint/LegalCaseEndpointIntegrationTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/src/java/com/example/rest/endpoint/LegalCaseEndpointIntegrationTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/impl/LegalCaseServiceImpl.java</url>
           <line>51</line>
-          <properties class="com.example.service.impl.LegalCaseServiceImpl" method="findAllWithSpecification">
+          <properties class="com.example.service.impl.LegalCaseServiceImpl">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -540,6 +804,57 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/example/rest/service/LegalCaseService.java</url>
+          <line>9</line>
+          <properties class="com.example.rest.service.LegalCaseService" method="findAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/example/service/PaymentService.java</url>
+          <line>10</line>
+          <properties class="com.example.service.PaymentService" method="findAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/example/rest/mapper/PaymentMapper.java</url>
+          <line>23</line>
+          <properties class="com.example.rest.mapper.PaymentMapper" method="toEntity">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/example/rest/service/CaseDocumentService.java</url>
+          <line>15</line>
+          <properties class="com.example.rest.service.CaseDocumentService" method="deleteById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/example/rest/service/impl/RestCaseDocumentServiceImpl.java</url>
+          <line>43</line>
+          <properties class="com.example.rest.service.impl.RestCaseDocumentServiceImpl" method="save">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/example/rest/dto/CountryDto.java</url>
+          <line>8</line>
+          <properties field="id" class="com.example.rest.dto.CountryDto" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
