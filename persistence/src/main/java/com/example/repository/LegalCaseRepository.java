@@ -1,5 +1,6 @@
 package com.example.repository;
 import com.example.model.LegalCase;
+import com.example.model.Status;
 import com.example.model.User;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
@@ -22,6 +23,7 @@ public interface LegalCaseRepository extends JpaRepository<LegalCase, Long> {
     @Modifying
     Page<LegalCase> findAll(Specification<LegalCase> spec, Pageable pageable);
 
+    List<LegalCase> findAllByStatus(Status status);
 }
 
 

@@ -28,7 +28,6 @@ public class CaseDocumentServiceImpl implements CaseDocumentService {
     }
 
 
-
     @Override
     public CaseDocument findById(Long id) {
         return caseDocumentRepository.findById(id).orElse(null);

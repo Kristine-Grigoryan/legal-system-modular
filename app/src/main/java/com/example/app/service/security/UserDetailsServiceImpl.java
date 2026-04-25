@@ -1,5 +1,6 @@
-package com.example.app.service;
+package com.example.app.service.security;
 
+import com.example.app.service.SpringUser;
 import com.example.model.User;
 import com.example.service.UserService;
 

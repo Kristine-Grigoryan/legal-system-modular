@@ -52,7 +52,7 @@ public class SendEmailServiceImpl  implements SendEmailService {
         message.setFrom("java92850@gmail.com");
         message.setTo(to);
 
-        // Create the HTML body using Thymeleaf
+
         final String htmlContent = templateEngine.process("verificationMailTemplate", ctx);
         message.setText(htmlContent, true); // true = isHtml
 
