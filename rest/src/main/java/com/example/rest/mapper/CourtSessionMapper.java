@@ -1,20 +1,22 @@
 package com.example.rest.mapper;
+import com.example.model.CourtSession;
+import com.example.rest.dto.CourtSessionDto;
 
-import com.example.model.CaseDocument;
-import com.example.model.LegalCase;
-import com.example.rest.dto.CaseDocumentDto;
-import com.example.rest.dto.LegalCaseDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import java.util.List;
 
 @Mapper(componentModel = "spring")
-public abstract class CaseDocumentMapper {
+public interface CourtSessionMapper {
 
-    @Mapping(target = "courseName", source = "student.course.name")
-    public abstract CaseDocumentDto toDto(CaseDocument CaseDocument);
+    @Mapping(source = "legalCase.id", target = "caseId")
+    @Mapping(source = "id", target = "id")
+    CourtSessionDto toDto(CourtSession entity);
 
-    public abstract List<CaseDocument> toDtoList(List<CaseDocumentDto> CaseDocuments);
 
+    @Mapping(source = "caseId", target = "legalCase.id")
+    CourtSession toEntity(CourtSessionDto dto);
+
+    List<CourtSessionDto> toDtoList(List<CourtSession> all);
 }
