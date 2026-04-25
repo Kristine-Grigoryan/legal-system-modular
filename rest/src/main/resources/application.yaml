@@ -6,30 +6,49 @@ spring:
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
-
-
   mail:
     host: smtp.gmail.com
     port: 587
-    username:
-    password:
+    username: java92850@gmail.com
+    password: inpukygtkqjhxyad
     properties:
       mail:
         smtp:
           auth: true
           starttls:
             enable: true
+
+  cache:
+    type: caffeine
+    cache-names: currency
+    caffeine:
+      spec: maximumSize=1,expireAfterWrite=10m
+
+
+
+
 legal:
-system:
-  upload:
-    image:
-      directory:
-        path:  G:/uploads/
+  system:
+    upload:
+      image:
+        directory:
+          path: G:/uploads/
 
 
 jwt:
-  secret:
+  secret:  YXNkZmYkIyNzZFNEU0RBQVNERksjQEBkc2ZqZGZrZHNqQEAjZHNmZ2ZnZmdeXiYmWipeJSQkI2RzZHMkIyVzZDQ1MDk5KUkjJCg5V0ZTSUo
   expiration: 600000
+
 server:
-  port: 8085
+  port: 8087
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.data.jpa: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.example  legalsystem: DEBUG
+
+
 
