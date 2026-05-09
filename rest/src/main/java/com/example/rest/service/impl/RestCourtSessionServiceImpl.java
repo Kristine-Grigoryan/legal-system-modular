@@ -63,7 +63,7 @@ public class RestCourtSessionServiceImpl implements CourtSessionService {
         existing.setSessionDate(dto.getSessionDate());
         existing.setNotes(dto.getNotes());
 
-        // եթե caseId update ես անում
+
         if (dto.getCaseId() != null) {
             LegalCase legalCase = legalCaseRepository.findById(dto.getCaseId())
                     .orElseThrow(() -> new EntityNotFoundException("Case not found"));

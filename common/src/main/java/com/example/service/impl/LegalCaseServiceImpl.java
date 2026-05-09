@@ -53,7 +53,6 @@ public class LegalCaseServiceImpl implements LegalCaseService {
     }
         @Override
         public LegalCase save(LegalCase legalCase, MultipartFile multipartFile) {
-            // 1. Եթե կա նկար՝ պահում ենք
             if (multipartFile != null && !multipartFile.isEmpty()) {
                 String fileName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
                 File file = new File(imageDirectoryPath + File.separator + fileName);

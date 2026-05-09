@@ -35,4 +35,6 @@ public class Payment {
     private LegalCase legalCase;
 
 
-}
+
+    }
+

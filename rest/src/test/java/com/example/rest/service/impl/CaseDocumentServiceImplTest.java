@@ -14,7 +14,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -37,9 +36,9 @@ public class CaseDocumentServiceImplTest {
         @InjectMocks
         private RestCaseDocumentServiceImpl caseDocumentService;
 
-        private CaseDocument caseDocument;
         private CaseDocumentDto caseDocumentDto;
         private LegalCase legalCase;
+        private CaseDocument caseDocument;
 
         @BeforeEach
         void setUp() {
@@ -100,11 +99,17 @@ public class CaseDocumentServiceImplTest {
 
 
 
-        @Test
-        void testDeleteById_Success() {
-            caseDocumentService.deleteById(1L);
 
+    @Test
+    void testDeleteById_Success() {
+        when(caseDocumentRepository.existsById(1L)).thenReturn(true);
 
-            verify(caseDocumentRepository, times(1)).deleteById(1L);
-        }
+        caseDocumentService.deleteById(1L);
+
+        verify(caseDocumentRepository, times(1)).deleteById(1L);
     }
+    }
+
+
+
+

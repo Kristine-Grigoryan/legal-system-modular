@@ -1,63 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
-    <!-- 1. USER -->
-    <changeSet id="user-1" author="system">
-        <insert tableName="users">
-            <column name="id" valueNumeric="1"/>
-            <column name="name" value="John"/>
-            <column name="surname" value="Doe"/>
-            <column name="username" value="john.doe@example.com"/>
-            <column name="password" value="encoded_password_here"/>
+    <changeSet id="insert-mock-user-en" author="kgrigoryan">
+        <insert tableName="user">
+            <column name="name" value="Armen"/>
+            <column name="surname" value="Grigoryan"/>
+            <column name="username" value="kgrigoryan"/>
+            <column name="password" value="$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd00dmRe.267GUyC"/> <!-- password: 123 -->
+            <column name="role" value="ADMIN"/>
             <column name="enabled" valueBoolean="true"/>
+        </insert>
+        <insert tableName="user">
+            <column name="name" value="Anna"/>
+            <column name="surname" value="Hakobyan"/>
+            <column name="username" value="ahakobyan"/>
+            <column name="password" value="$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd00dmRe.267GUyC"/>
             <column name="role" value="USER"/>
+            <column name="enabled" valueBoolean="true"/>
         </insert>
     </changeSet>
 
-    <!-- 2. LEGAL CASE -->
-    <changeSet id="case-1" author="system">
+    <changeSet id="insert-mock-legal-case-en" author="kgrigoryan">
         <insert tableName="legal_case">
-            <column name="id" valueNumeric="1"/>
-            <column name="title" value="Contract Dispute #101"/>
-            <column name="description" value="Initial breach of contract investigation."/>
-            <column name="amount" valueNumeric="1500.00"/>
+            <column name="title" value="Employment Dispute #102"/>
+            <column name="description" value="Case regarding unpaid vacation pay and overtime."/>
             <column name="status" value="OPEN"/>
+            <column name="amount" valueNumeric="5500.00"/>
             <column name="user_id" valueNumeric="1"/>
         </insert>
+        <insert tableName="legal_case">
+            <column name="title" value="Property Rights Conflict"/>
+            <column name="description" value="Dispute over residential property privatization."/>
+            <column name="status" value="IN_PROGRESS"/>
+            <column name="amount" valueNumeric="12500.00"/>
+            <column name="user_id" valueNumeric="2"/>
+        </insert>
     </changeSet>
 
-    <!-- 3. COURT SESSION -->
-    <changeSet id="session-1" author="system">
+    <changeSet id="insert-mock-court-session-en" author="kgrigoryan">
         <insert tableName="court_session">
-            <column name="session_date" valueDate="2026-05-20"/>
-            <column name="courtroom" value="Room 302B"/>
-            <column name="notes" value="Pre-trial hearing for discovery."/>
+            <!-- Validated: Future date for @FutureOrPresent constraint -->
+            <column name="session_date" valueDate="2026-06-20T10:30:00"/>
+            <!-- Validated: Under 20-150 chars for @Size constraint -->
+            <column name="courtroom" value="Courtroom 4A - Civil"/>
+            <!-- Validated: Short notes for @Size(max=50) if strictly followed -->
+            <column name="notes" value="Preliminary hearing and witness testimony."/>
             <column name="case_id" valueNumeric="1"/>
         </insert>
     </changeSet>
 
-    <!-- 4. DOCUMENT -->
-    <changeSet id="doc-1" author="system">
+    <changeSet id="insert-mock-document-en" author="kgrigoryan">
         <insert tableName="case_document">
-            <column name="file_name" value="contract.pdf"/>
+            <column name="file_name" value="legal_claim_form.pdf"/>
             <column name="file_type" value="application/pdf"/>
-            <column name="file_path" value="/uploads/contract.pdf"/>
+            <column name="file_path" value="/uploads/cases/1/claim.pdf"/>
+            <column name="uploaded_at" valueComputed="CURRENT_TIMESTAMP"/>
             <column name="case_id" valueNumeric="1"/>
         </insert>
     </changeSet>
 
-    <!-- 5. PAYMENT -->
-    <changeSet id="payment-1" author="system">
-        <insert tableName="payment">
-            <column name="amount" valueNumeric="1500.00"/>
-            <column name="paid_date" valueDate="2026-03-10"/>
-            <column name="method" value="BANK_TRANSFER"/>
-            <column name="case_id" valueNumeric="1"/>
-        </insert>
+
+    <changeSet id="insert-mock-payment-en" author="kgrigoryan">
+          <insert tableName="payment">
+              <column name="amount" valueNumeric="1500.00"/>
+              <column name="paid_date" valueDate="2026-03-10"/>
+              <column name="method" value="BANK"/>
+              <column name="case_id" valueNumeric="1"/>
+          </insert>
     </changeSet>
 
 </databaseChangeLog>
