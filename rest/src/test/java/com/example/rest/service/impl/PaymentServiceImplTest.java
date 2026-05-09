@@ -1,11 +1,9 @@
 package com.example.rest.service.impl;
 
 import com.example.model.Payment;
-
 import com.example.repository.PaymentRepository;
 import com.example.rest.dto.PaymentDto;
 import com.example.rest.mapper.PaymentMapper;
-import com.example.service.impl.PaymentServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,8 +15,7 @@ import java.math.BigDecimal;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class PaymentServiceImplTest {

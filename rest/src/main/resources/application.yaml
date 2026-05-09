@@ -1,30 +1,37 @@
 spring:
   application:
-    name: rest
+    name: legal-system-modular
   datasource:
     url: jdbc:postgresql://localhost:5432/legal_system
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/master.xml
+
+
   mail:
     host: smtp.gmail.com
     port: 587
     username: java92850@gmail.com
     password: inpukygtkqjhxyad
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+
 
   cache:
     type: caffeine
     cache-names: currency
     caffeine:
       spec: maximumSize=1,expireAfterWrite=10m
-
-
 
 
 legal:

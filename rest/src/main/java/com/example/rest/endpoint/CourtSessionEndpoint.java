@@ -25,11 +25,13 @@ public class CourtSessionEndpoint {
         return ResponseEntity.ok(courtSessionService.findAll());
     }
 
-    @PostMapping("/courtSession")
-    public ResponseEntity<CourtSessionDto> createCourtSession(@RequestBody @Valid CourtSessionDto courtSessionDto) {
-        return ResponseEntity.status(HttpStatus.CREATED)
-                .body(courtSessionService.save(courtSessionDto));
-    }
+
+        @PostMapping("courtSession")
+        public ResponseEntity<CourtSessionDto> create(@Valid @RequestBody CourtSessionDto session) {
+            return ResponseEntity.status(HttpStatus.CREATED).body(session);
+        }
+
+
 
     @GetMapping("/courtSessions/{id}")
     public ResponseEntity<CourtSessionDto> getById(@PathVariable Long id) {

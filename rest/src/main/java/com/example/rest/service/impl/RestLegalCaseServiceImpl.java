@@ -5,6 +5,7 @@ import com.example.repository.LegalCaseRepository;
 import com.example.rest.dto.LegalCaseDto;
 import com.example.rest.mapper.LegalCaseMapper;
 import com.example.rest.service.LegalCaseService;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Primary;
@@ -39,17 +40,20 @@ public class RestLegalCaseServiceImpl implements LegalCaseService {
 
     @Override
     public LegalCaseDto findById(Long id) {
-        return legalCaseMapper.toDto(legalCaseRepository.findById(id).orElse(null));
+        log.info("Fetching legal case by id: {}", id);
+        LegalCase legalCase = legalCaseRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("LegalCase with id " + id + " not found"));
+        return legalCaseMapper.toDto(legalCase);
     }
 
 
     @Override
     public void deleteById(Long id) {
+        log.info("Deleting legal case by id: {}", id);
+        if (!legalCaseRepository.existsById(id)) {
+            throw new EntityNotFoundException("LegalCase with id " + id + " not found");
+        }
         legalCaseRepository.deleteById(id);
     }
 
 }
-
-
-
-

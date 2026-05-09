@@ -45,13 +45,11 @@ public class PaymentEndpoint {
     }
 
 
-    @DeleteMapping("payment/{id}")
-    public ResponseEntity<Void> deletePayment(@PathVariable long id) {
+    @DeleteMapping("/payment/{id}")
+    public ResponseEntity<Void> deletePayment(@PathVariable Long id) {
         paymentService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
-
-
 }
 
 

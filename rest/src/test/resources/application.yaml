@@ -1,24 +1,41 @@
 spring:
   datasource:
-    # NON_KEYWORDS=USER: Liquibase creates a `user` table (1_init_db.xml); `user` is reserved in
-    # PostgreSQL mode, so de-reserve it.
-    # CASE_INSENSITIVE_IDENTIFIERS=TRUE: the User entity uses @Table(name = "\"user\"") (quoted
-    # lowercase). H2 stores unquoted identifiers as uppercase by default, so without this flag
-    # Hibernate's quoted "user" wouldn't match Liquibase's USER table.
     url: jdbc:h2:mem:testdb;MODE=PostgreSQL;NON_KEYWORDS=USER;CASE_INSENSITIVE_IDENTIFIERS=TRUE;DB_CLOSE_DELAY=-1
     driver-class-name: org.h2.Driver
     username: sa
     password:
+
+
   liquibase:
     enabled: true
     change-log: classpath:db/master.xml
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: java92850@gmail.com
+    password: inpukygtkqjhxyad
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
 
 swagger:
   config: false
+
+
+legal:
+  system:
+    upload:
+      image:
+        directory:
+          path: G:/uploads/
+
 
 springdoc:
   api-docs:
